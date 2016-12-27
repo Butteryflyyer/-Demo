@@ -1,0 +1,6 @@
+framework module Pods_XHWorkerTests {
+  umbrella header "Pods-XHWorkerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
