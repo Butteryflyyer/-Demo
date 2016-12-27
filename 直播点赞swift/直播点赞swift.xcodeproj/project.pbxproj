@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDA345731DD46ADE00F55295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA345721DD46ADE00F55295 /* AppDelegate.swift */; };
+		BDA345751DD46ADE00F55295 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA345741DD46ADE00F55295 /* ViewController.swift */; };
+		BDA345781DD46ADE00F55295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA345761DD46ADE00F55295 /* Main.storyboard */; };
+		BDA3457A1DD46ADE00F55295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA345791DD46ADE00F55295 /* Assets.xcassets */; };
+		BDA3457D1DD46ADE00F55295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA3457B1DD46ADE00F55295 /* LaunchScreen.storyboard */; };
+		BDA345881DD46ADE00F55295 /* ____swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA345871DD46ADE00F55295 /* ____swiftTests.swift */; };
+		BDA345931DD46ADE00F55295 /* ____swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA345921DD46ADE00F55295 /* ____swiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDA345841DD46ADE00F55295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA345671DD46ADE00F55295 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDA3456E1DD46ADE00F55295;
+			remoteInfo = "直播点赞swift";
+		};
+		BDA3458F1DD46ADE00F55295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA345671DD46ADE00F55295 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDA3456E1DD46ADE00F55295;
+			remoteInfo = "直播点赞swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDA3456F1DD46ADE00F55295 /* 直播点赞swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直播点赞swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA345721DD46ADE00F55295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDA345741DD46ADE00F55295 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDA345771DD46ADE00F55295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDA345791DD46ADE00F55295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDA3457C1DD46ADE00F55295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDA3457E1DD46ADE00F55295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA345831DD46ADE00F55295 /* 直播点赞swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "直播点赞swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA345871DD46ADE00F55295 /* ____swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____swiftTests.swift"; sourceTree = "<group>"; };
+		BDA345891DD46ADE00F55295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA3458E1DD46ADE00F55295 /* 直播点赞swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "直播点赞swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA345921DD46ADE00F55295 /* ____swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____swiftUITests.swift"; sourceTree = "<group>"; };
+		BDA345941DD46ADE00F55295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDA3456C1DD46ADE00F55295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA345801DD46ADE00F55295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA3458B1DD46ADE00F55295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDA345661DD46ADE00F55295 = {
+			isa = PBXGroup;
+			children = (
+				BDA345711DD46ADE00F55295 /* 直播点赞swift */,
+				BDA345861DD46ADE00F55295 /* 直播点赞swiftTests */,
+				BDA345911DD46ADE00F55295 /* 直播点赞swiftUITests */,
+				BDA345701DD46ADE00F55295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDA345701DD46ADE00F55295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDA3456F1DD46ADE00F55295 /* 直播点赞swift.app */,
+				BDA345831DD46ADE00F55295 /* 直播点赞swiftTests.xctest */,
+				BDA3458E1DD46ADE00F55295 /* 直播点赞swiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDA345711DD46ADE00F55295 /* 直播点赞swift */ = {
+			isa = PBXGroup;
+			children = (
+				BDA345721DD46ADE00F55295 /* AppDelegate.swift */,
+				BDA345741DD46ADE00F55295 /* ViewController.swift */,
+				BDA345761DD46ADE00F55295 /* Main.storyboard */,
+				BDA345791DD46ADE00F55295 /* Assets.xcassets */,
+				BDA3457B1DD46ADE00F55295 /* LaunchScreen.storyboard */,
+				BDA3457E1DD46ADE00F55295 /* Info.plist */,
+			);
+			path = "直播点赞swift";
+			sourceTree = "<group>";
+		};
+		BDA345861DD46ADE00F55295 /* 直播点赞swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDA345871DD46ADE00F55295 /* ____swiftTests.swift */,
+				BDA345891DD46ADE00F55295 /* Info.plist */,
+			);
+			path = "直播点赞swiftTests";
+			sourceTree = "<group>";
+		};
+		BDA345911DD46ADE00F55295 /* 直播点赞swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDA345921DD46ADE00F55295 /* ____swiftUITests.swift */,
+				BDA345941DD46ADE00F55295 /* Info.plist */,
+			);
+			path = "直播点赞swiftUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDA3456E1DD46ADE00F55295 /* 直播点赞swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDA345971DD46ADE00F55295 /* Build configuration list for PBXNativeTarget "直播点赞swift" */;
+			buildPhases = (
+				BDA3456B1DD46ADE00F55295 /* Sources */,
+				BDA3456C1DD46ADE00F55295 /* Frameworks */,
+				BDA3456D1DD46ADE00F55295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "直播点赞swift";
+			productName = "直播点赞swift";
+			productReference = BDA3456F1DD46ADE00F55295 /* 直播点赞swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDA345821DD46ADE00F55295 /* 直播点赞swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDA3459A1DD46ADE00F55295 /* Build configuration list for PBXNativeTarget "直播点赞swiftTests" */;
+			buildPhases = (
+				BDA3457F1DD46ADE00F55295 /* Sources */,
+				BDA345801DD46ADE00F55295 /* Frameworks */,
+				BDA345811DD46ADE00F55295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDA345851DD46ADE00F55295 /* PBXTargetDependency */,
+			);
+			name = "直播点赞swiftTests";
+			productName = "直播点赞swiftTests";
+			productReference = BDA345831DD46ADE00F55295 /* 直播点赞swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDA3458D1DD46ADE00F55295 /* 直播点赞swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDA3459D1DD46ADE00F55295 /* Build configuration list for PBXNativeTarget "直播点赞swiftUITests" */;
+			buildPhases = (
+				BDA3458A1DD46ADE00F55295 /* Sources */,
+				BDA3458B1DD46ADE00F55295 /* Frameworks */,
+				BDA3458C1DD46ADE00F55295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDA345901DD46ADE00F55295 /* PBXTargetDependency */,
+			);
+			name = "直播点赞swiftUITests";
+			productName = "直播点赞swiftUITests";
+			productReference = BDA3458E1DD46ADE00F55295 /* 直播点赞swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDA345671DD46ADE00F55295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = xinhao;
+				TargetAttributes = {
+					BDA3456E1DD46ADE00F55295 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BSGYLY83PB;
+						ProvisioningStyle = Automatic;
+					};
+					BDA345821DD46ADE00F55295 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BSGYLY83PB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDA3456E1DD46ADE00F55295;
+					};
+					BDA3458D1DD46ADE00F55295 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BSGYLY83PB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDA3456E1DD46ADE00F55295;
+					};
+				};
+			};
+			buildConfigurationList = BDA3456A1DD46ADE00F55295 /* Build configuration list for PBXProject "直播点赞swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDA345661DD46ADE00F55295;
+			productRefGroup = BDA345701DD46ADE00F55295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDA3456E1DD46ADE00F55295 /* 直播点赞swift */,
+				BDA345821DD46ADE00F55295 /* 直播点赞swiftTests */,
+				BDA3458D1DD46ADE00F55295 /* 直播点赞swiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDA3456D1DD46ADE00F55295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA3457D1DD46ADE00F55295 /* LaunchScreen.storyboard in Resources */,
+				BDA3457A1DD46ADE00F55295 /* Assets.xcassets in Resources */,
+				BDA345781DD46ADE00F55295 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA345811DD46ADE00F55295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA3458C1DD46ADE00F55295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDA3456B1DD46ADE00F55295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA345751DD46ADE00F55295 /* ViewController.swift in Sources */,
+				BDA345731DD46ADE00F55295 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA3457F1DD46ADE00F55295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA345881DD46ADE00F55295 /* ____swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA3458A1DD46ADE00F55295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA345931DD46ADE00F55295 /* ____swiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDA345851DD46ADE00F55295 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDA3456E1DD46ADE00F55295 /* 直播点赞swift */;
+			targetProxy = BDA345841DD46ADE00F55295 /* PBXContainerItemProxy */;
+		};
+		BDA345901DD46ADE00F55295 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDA3456E1DD46ADE00F55295 /* 直播点赞swift */;
+			targetProxy = BDA3458F1DD46ADE00F55295 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDA345761DD46ADE00F55295 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDA345771DD46ADE00F55295 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDA3457B1DD46ADE00F55295 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDA3457C1DD46ADE00F55295 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDA345951DD46ADE00F55295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDA345961DD46ADE00F55295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDA345981DD46ADE00F55295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BSGYLY83PB;
+				INFOPLIST_FILE = "直播点赞swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongyingshengke.----swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BDA345991DD46ADE00F55295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BSGYLY83PB;
+				INFOPLIST_FILE = "直播点赞swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongyingshengke.----swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BDA3459B1DD46ADE00F55295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BSGYLY83PB;
+				INFOPLIST_FILE = "直播点赞swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongyingshengke.----swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/直播点赞swift.app/直播点赞swift";
+			};
+			name = Debug;
+		};
+		BDA3459C1DD46ADE00F55295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BSGYLY83PB;
+				INFOPLIST_FILE = "直播点赞swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongyingshengke.----swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/直播点赞swift.app/直播点赞swift";
+			};
+			name = Release;
+		};
+		BDA3459E1DD46ADE00F55295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BSGYLY83PB;
+				INFOPLIST_FILE = "直播点赞swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongyingshengke.----swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "直播点赞swift";
+			};
+			name = Debug;
+		};
+		BDA3459F1DD46ADE00F55295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BSGYLY83PB;
+				INFOPLIST_FILE = "直播点赞swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongyingshengke.----swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "直播点赞swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDA3456A1DD46ADE00F55295 /* Build configuration list for PBXProject "直播点赞swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA345951DD46ADE00F55295 /* Debug */,
+				BDA345961DD46ADE00F55295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDA345971DD46ADE00F55295 /* Build configuration list for PBXNativeTarget "直播点赞swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA345981DD46ADE00F55295 /* Debug */,
+				BDA345991DD46ADE00F55295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDA3459A1DD46ADE00F55295 /* Build configuration list for PBXNativeTarget "直播点赞swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA3459B1DD46ADE00F55295 /* Debug */,
+				BDA3459C1DD46ADE00F55295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDA3459D1DD46ADE00F55295 /* Build configuration list for PBXNativeTarget "直播点赞swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA3459E1DD46ADE00F55295 /* Debug */,
+				BDA3459F1DD46ADE00F55295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDA345671DD46ADE00F55295 /* Project object */;
+}
