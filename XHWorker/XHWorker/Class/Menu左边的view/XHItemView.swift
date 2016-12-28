@@ -113,6 +113,8 @@ class XHItemView: UIView {
                 //停顿
              Utils.delay(seconds: 0.5, completion: { 
                 
+                self.showDetail?(self)
+                
                 
                 self.isAnimating = false
                 UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: UIViewAnimationOptions.allowAnimatedContent, animations: { () -> Void in

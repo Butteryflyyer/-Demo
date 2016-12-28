@@ -19,5 +19,181 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XHWorker/Class/Main&#x4e3b;&#x8981;/XHMainViewController.swift"
+            timestampString = "504587070.96445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "switchChildViewControl()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XHWorker/Class/Main&#x4e3b;&#x8981;/XHMainViewController.swift"
+            timestampString = "504587088.921677"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "switchChildViewControl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XHWorker.XHMainViewController.(switchChildViewControl () -&gt; ()).(closure #1).(closure #2)"
+                  moduleName = "XHWorker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinhao/-Demo/XHWorker/XHWorker/Class/Main%E4%B8%BB%E8%A6%81/XHMainViewController.swift"
+                  timestampString = "504587455.127274"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "576">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XHWorker.XHMainViewController.(switchChildViewControl () -&gt; ()).(closure #1).(closure #2).(closure #2)"
+                  moduleName = "XHWorker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinhao/-Demo/XHWorker/XHWorker/Class/Main%E4%B8%BB%E8%A6%81/XHMainViewController.swift"
+                  timestampString = "504587455.130123"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XHWorker/Class/Menu&#x5de6;&#x8fb9;&#x7684;view/XHItemView.swift"
+            timestampString = "504587096.99722"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "tapHandel(tap:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XHWorker/Class/Menu&#x5de6;&#x8fb9;&#x7684;view/XHItemView.swift"
+            timestampString = "504587102.847015"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "tapHandel(tap:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XHWorker/Class/Menu&#x5de6;&#x8fb9;&#x7684;view/XHItemView.swift"
+            timestampString = "504587454.019007"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "tapHandel(tap:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XHWorker.XHItemView.(tapHandel (tap : __ObjC.UITapGestureRecognizer) -&gt; ()).(closure #2).(closure #1)"
+                  moduleName = "XHWorker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinhao/-Demo/XHWorker/XHWorker/Class/Menu%E5%B7%A6%E8%BE%B9%E7%9A%84view/XHItemView.swift"
+                  timestampString = "504587455.143053"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "219">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XHWorker.XHItemView.(tapHandel (tap : __ObjC.UITapGestureRecognizer) -&gt; ()).(closure #2).(closure #1).(closure #1)"
+                  moduleName = "XHWorker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinhao/-Demo/XHWorker/XHWorker/Class/Menu%E5%B7%A6%E8%BE%B9%E7%9A%84view/XHItemView.swift"
+                  timestampString = "504587455.144946"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XHWorker/Class/Main&#x4e3b;&#x8981;/XHMainViewController.swift"
+            timestampString = "504587277.853355"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "switchChildViewControl()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XHWorker/Class/Menu&#x5de6;&#x8fb9;&#x7684;view/XHMenuViewController.swift"
+            timestampString = "504587334.924565"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "initItems()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -66,6 +66,7 @@ class XHMainViewController: UIViewController {
         setUpUI()
         
         
+        switchChildViewControl()
         
         
         // Do any additional setup after loading the view.
