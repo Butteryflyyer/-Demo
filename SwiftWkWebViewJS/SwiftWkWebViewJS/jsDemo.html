@@ -1,0 +1,54 @@
+</<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width=device-width">
+<title>app</title>
+<style>
+input {
+    border-width: 1px;
+    border-radius: 4px;
+width: 120px;
+height: 22px;
+}
+button {
+    border-width: 1px;
+    border-radius: 4px;
+width: 60px;
+height: 40px;
+    background-color: blue;
+color: white;
+}
+</style>
+</head>
+<body>
+<br>
+<p>说点什么吧<input type = "text" id = "saysomething"></p>
+
+<p id = "yousay"></p>
+
+<button id = "button" onclick = "go()">go</button><br><br>
+
+</body>
+</html>
+
+<script type = "text/javascript">
+
+function answer(value) {
+    document.getElementById("yousay").innerHTML = value;
+}
+
+function showAlert(){
+    
+    document.getElementById("button").innerHTML = "22222";
+      window.webkit.messageHandlers.anotherModel.postMessage("3333");
+    
+}
+
+function go() {
+    var yousay = document.getElementById("saysomething").value;
+    var massage = {"yousay": yousay};
+    window.webkit.messageHandlers.model.postMessage(massage);
+}
+
+</script>
