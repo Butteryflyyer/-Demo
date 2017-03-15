@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'SwiftStudy______' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'MJExtension'
+pod 'SnapKit'
+pod 'Alamofire'
+pod 'SDCycleScrollView'
+pod 'HandyJSON'
+pod 'SwiftyJSON'
+  # Pods for SwiftStudy______
+
+  target 'SwiftStudy______Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SwiftStudy______UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

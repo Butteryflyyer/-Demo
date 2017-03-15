@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title></title>
+            <style>
+                button{
+                    width: 100px;
+                    height:100px;
+                    background-color : "gray";
+                    margin-top: 200px;
+                    padding-top:100px;
+                    
+                }
+            #wk{
+                
+                width: 100px;
+                height:100px;
+                background-color : "gray";
+                margin-top: 10px;
+                padding-top:10px;
+                
+              }
+            </style>
+
+    </head>
+    <body>
+        <div>
+             <button type="button" onclick="callSwift.show()">点击按钮吊起oc方法 UI</button>
+             <button class = "wk" type="button" onclick="show()">点击按钮吊起oc方法 WK</button>
+        </div>
+        
+        <script>
+       function myclick(){
+                
+                alert("11");
+        }
+        
+        
+        function show(){
+            
+            
+            window.webkit.messageHandlers.NativeMethod.postMessage(null);
+        }
+        function showmyName(){
+            //不懂为何alert没反应
+            
+            alert("myname")
+   
+        }
+            </script>
+    
+    </body>
+</html>
