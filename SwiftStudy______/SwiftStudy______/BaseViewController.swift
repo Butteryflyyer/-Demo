@@ -15,6 +15,14 @@ class BaseViewController: UIViewController {
     
         SetBackGroundColor()
         self.automaticallyAdjustsScrollViewInsets = false
+        
+        var btn = UIButton.init(type: .contactAdd)
+        
+        btn.frame = CGRect(x: 10, y: 10, width: 40, height: 20)
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: btn)
+        
+        btn.addTarget(self, action: #selector(BaseViewController.BackClick), for: .touchDragInside)
         // Do any additional setup after loading the view.
     }
 
@@ -23,7 +31,9 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func BackClick(){
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

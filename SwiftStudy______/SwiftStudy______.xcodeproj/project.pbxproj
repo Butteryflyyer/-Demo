@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		0428ED8FDF7ED2ECEF1C420A /* Pods_SwiftStudy______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0321CE7E223A430425DB6F08 /* Pods_SwiftStudy______.framework */; };
 		BD44669B1E792D4F00FB5EA2 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD44669A1E792D4F00FB5EA2 /* JavaScriptCore.framework */; };
+		BD58E4D61E7A25CA00CA0D18 /* RunTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58E4D51E7A25CA00CA0D18 /* RunTimeViewController.swift */; };
+		BD58E4D91E7A27D100CA0D18 /* TestSwiftRuntimeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58E4D81E7A27D100CA0D18 /* TestSwiftRuntimeClass.swift */; };
+		BD58E4DB1E7A37F000CA0D18 /* UIControl+btn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58E4DA1E7A37F000CA0D18 /* UIControl+btn.swift */; };
+		BD58E4DF1E7A628600CA0D18 /* DispatchQueue+Dispatch_once.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58E4DE1E7A628600CA0D18 /* DispatchQueue+Dispatch_once.swift */; };
+		BD58E4E11E7A6B7600CA0D18 /* GCDStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58E4E01E7A6B7600CA0D18 /* GCDStudy.swift */; };
+		BD58E4E31E7A6F8100CA0D18 /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58E4E21E7A6F8100CA0D18 /* Single.swift */; };
 		BD77EE9C1E67B391003D6CD3 /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD77EE9B1E67B391003D6CD3 /* BannerModel.swift */; };
 		BD77EE9F1E67C728003D6CD3 /* subFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD77EE9E1E67C728003D6CD3 /* subFirstViewController.swift */; };
 		BD77EEA11E67C733003D6CD3 /* subSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD77EEA01E67C733003D6CD3 /* subSecondViewController.swift */; };
 		BD77EEA31E67F2C1003D6CD3 /* myProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD77EEA21E67F2C1003D6CD3 /* myProductCell.swift */; };
 		BDABE7D11E7921AC00D7167A /* jsToOc.html in Resources */ = {isa = PBXBuildFile; fileRef = BDABE7D01E7921AC00D7167A /* jsToOc.html */; };
+		BDC21EC31E7BB425005B2F4C /* PersonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC21EC21E7BB425005B2F4C /* PersonClass.swift */; };
+		BDC21EC51E7BB96F005B2F4C /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC21EC41E7BB96F005B2F4C /* Protocol.swift */; };
 		BDDC10F61E66A6E100EF1837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC10F51E66A6E100EF1837 /* AppDelegate.swift */; };
 		BDDC10F81E66A6E100EF1837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC10F71E66A6E100EF1837 /* ViewController.swift */; };
 		BDDC10FB1E66A6E100EF1837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDC10F91E66A6E100EF1837 /* Main.storyboard */; };
@@ -31,6 +39,7 @@
 		BDDC11371E66BEFD00EF1837 /* SwiftToOc.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDC11361E66BEFD00EF1837 /* SwiftToOc.m */; };
 		BDDC113A1E66BFE600EF1837 /* OcToSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC11391E66BFE600EF1837 /* OcToSwift.swift */; };
 		BDDC113D1E66C82600EF1837 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC113C1E66C82600EF1837 /* NetworkTools.swift */; };
+		BDE1786D1E7F6AC1005BFB04 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1786C1E7F6AC1005BFB04 /* AnimationViewController.swift */; };
 		DB156D0E2109E3D1D8D7A7CA /* Pods_SwiftStudy______Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13FAE0582E2429540D5462F /* Pods_SwiftStudy______Tests.framework */; };
 		FD10A5AC88B69095EC6F47E6 /* Pods_SwiftStudy______UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDA16C278FC33B4780CCB21 /* Pods_SwiftStudy______UITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,11 +71,19 @@
 		ABDA16C278FC33B4780CCB21 /* Pods_SwiftStudy______UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_SwiftStudy______UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B698D7488438C73604D51219 /* Pods-SwiftStudy______Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy______Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy______Tests/Pods-SwiftStudy______Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BD44669A1E792D4F00FB5EA2 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		BD58E4D51E7A25CA00CA0D18 /* RunTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunTimeViewController.swift; sourceTree = "<group>"; };
+		BD58E4D81E7A27D100CA0D18 /* TestSwiftRuntimeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwiftRuntimeClass.swift; sourceTree = "<group>"; };
+		BD58E4DA1E7A37F000CA0D18 /* UIControl+btn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+btn.swift"; sourceTree = "<group>"; };
+		BD58E4DE1E7A628600CA0D18 /* DispatchQueue+Dispatch_once.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Dispatch_once.swift"; sourceTree = "<group>"; };
+		BD58E4E01E7A6B7600CA0D18 /* GCDStudy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDStudy.swift; sourceTree = "<group>"; };
+		BD58E4E21E7A6F8100CA0D18 /* Single.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
 		BD77EE9B1E67B391003D6CD3 /* BannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
 		BD77EE9E1E67C728003D6CD3 /* subFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subFirstViewController.swift; sourceTree = "<group>"; };
 		BD77EEA01E67C733003D6CD3 /* subSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subSecondViewController.swift; sourceTree = "<group>"; };
 		BD77EEA21E67F2C1003D6CD3 /* myProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myProductCell.swift; sourceTree = "<group>"; };
 		BDABE7D01E7921AC00D7167A /* jsToOc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jsToOc.html; sourceTree = "<group>"; };
+		BDC21EC21E7BB425005B2F4C /* PersonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonClass.swift; sourceTree = "<group>"; };
+		BDC21EC41E7BB96F005B2F4C /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		BDDC10F21E66A6E100EF1837 /* SwiftStudy______.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftStudy______.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDC10F51E66A6E100EF1837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDC10F71E66A6E100EF1837 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +109,7 @@
 		BDDC11361E66BEFD00EF1837 /* SwiftToOc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftToOc.m; sourceTree = "<group>"; };
 		BDDC11391E66BFE600EF1837 /* OcToSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OcToSwift.swift; sourceTree = "<group>"; };
 		BDDC113C1E66C82600EF1837 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		BDE1786C1E7F6AC1005BFB04 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		D13FAE0582E2429540D5462F /* Pods_SwiftStudy______Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_SwiftStudy______Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +166,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD58E4D21E7A256500CA0D18 /* first */ = {
+			isa = PBXGroup;
+			children = (
+				BD77EE9D1E67C6FA003D6CD3 /* subController */,
+				BDDC11251E66A90700EF1837 /* FirstViewController.swift */,
+			);
+			name = first;
+			sourceTree = "<group>";
+		};
+		BD58E4D31E7A257300CA0D18 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC11271E66A91100EF1837 /* SecondViewController.swift */,
+			);
+			name = Second;
+			sourceTree = "<group>";
+		};
+		BD58E4D41E7A258100CA0D18 /* third */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC11291E66A91D00EF1837 /* ThirdViewController.swift */,
+				BD58E4D51E7A25CA00CA0D18 /* RunTimeViewController.swift */,
+				BD58E4D81E7A27D100CA0D18 /* TestSwiftRuntimeClass.swift */,
+				BD58E4E21E7A6F8100CA0D18 /* Single.swift */,
+				BD58E4E01E7A6B7600CA0D18 /* GCDStudy.swift */,
+				BD58E4DA1E7A37F000CA0D18 /* UIControl+btn.swift */,
+				BD58E4DE1E7A628600CA0D18 /* DispatchQueue+Dispatch_once.swift */,
+			);
+			name = third;
+			sourceTree = "<group>";
+		};
 		BD77EE9A1E67B378003D6CD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +212,15 @@
 				BD77EEA01E67C733003D6CD3 /* subSecondViewController.swift */,
 			);
 			name = subController;
+			sourceTree = "<group>";
+		};
+		BDC21EC11E7BB3ED005B2F4C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BDC21EC21E7BB425005B2F4C /* PersonClass.swift */,
+				BDC21EC41E7BB96F005B2F4C /* Protocol.swift */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 		BDDC10E91E66A6E100EF1837 = {
@@ -194,12 +252,14 @@
 				BDDC11231E66A84A00EF1837 /* BaseTabBar.swift */,
 				BDDC112B1E66AC8E00EF1837 /* BaseViewController.swift */,
 				BDABE7D01E7921AC00D7167A /* jsToOc.html */,
+				BDE1786B1E7F6A9B005BFB04 /* Animation */,
 				BD77EE9A1E67B378003D6CD3 /* Model */,
 				BDDC113B1E66C80600EF1837 /* NetworkTools */,
 				BDDC11381E66BFC500EF1837 /* Tools */,
 				BDDC11301E66B79400EF1837 /* Controller */,
 				BDDC112D1E66B1B700EF1837 /* View */,
 				BDDC10F71E66A6E100EF1837 /* ViewController.swift */,
+				BDC21EC11E7BB3ED005B2F4C /* Protocol */,
 				BDDC11331E66BED200EF1837 /* OC */,
 				BDDC10F91E66A6E100EF1837 /* Main.storyboard */,
 				BDDC10FC1E66A6E200EF1837 /* Assets.xcassets */,
@@ -240,10 +300,9 @@
 		BDDC11301E66B79400EF1837 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BDDC11251E66A90700EF1837 /* FirstViewController.swift */,
-				BD77EE9D1E67C6FA003D6CD3 /* subController */,
-				BDDC11271E66A91100EF1837 /* SecondViewController.swift */,
-				BDDC11291E66A91D00EF1837 /* ThirdViewController.swift */,
+				BD58E4D41E7A258100CA0D18 /* third */,
+				BD58E4D31E7A257300CA0D18 /* Second */,
+				BD58E4D21E7A256500CA0D18 /* first */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -272,6 +331,14 @@
 				BDDC113C1E66C82600EF1837 /* NetworkTools.swift */,
 			);
 			name = NetworkTools;
+			sourceTree = "<group>";
+		};
+		BDE1786B1E7F6A9B005BFB04 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				BDE1786C1E7F6AC1005BFB04 /* AnimationViewController.swift */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -562,20 +629,29 @@
 			files = (
 				BD77EEA11E67C733003D6CD3 /* subSecondViewController.swift in Sources */,
 				BDDC112F1E66B1D700EF1837 /* BlockView.swift in Sources */,
+				BDE1786D1E7F6AC1005BFB04 /* AnimationViewController.swift in Sources */,
 				BDDC10F81E66A6E100EF1837 /* ViewController.swift in Sources */,
 				BDDC10F61E66A6E100EF1837 /* AppDelegate.swift in Sources */,
+				BD58E4D61E7A25CA00CA0D18 /* RunTimeViewController.swift in Sources */,
+				BD58E4D91E7A27D100CA0D18 /* TestSwiftRuntimeClass.swift in Sources */,
 				BDDC11241E66A84A00EF1837 /* BaseTabBar.swift in Sources */,
 				BD77EEA31E67F2C1003D6CD3 /* myProductCell.swift in Sources */,
+				BD58E4DF1E7A628600CA0D18 /* DispatchQueue+Dispatch_once.swift in Sources */,
 				BD77EE9C1E67B391003D6CD3 /* BannerModel.swift in Sources */,
 				BDDC11371E66BEFD00EF1837 /* SwiftToOc.m in Sources */,
+				BDC21EC51E7BB96F005B2F4C /* Protocol.swift in Sources */,
 				BDDC11281E66A91100EF1837 /* SecondViewController.swift in Sources */,
+				BD58E4DB1E7A37F000CA0D18 /* UIControl+btn.swift in Sources */,
 				BDDC112A1E66A91D00EF1837 /* ThirdViewController.swift in Sources */,
 				BDDC11321E66B7B700EF1837 /* myCustomCell.swift in Sources */,
 				BDDC113D1E66C82600EF1837 /* NetworkTools.swift in Sources */,
+				BDC21EC31E7BB425005B2F4C /* PersonClass.swift in Sources */,
 				BDDC112C1E66AC8E00EF1837 /* BaseViewController.swift in Sources */,
 				BDDC11261E66A90700EF1837 /* FirstViewController.swift in Sources */,
 				BD77EE9F1E67C728003D6CD3 /* subFirstViewController.swift in Sources */,
+				BD58E4E11E7A6B7600CA0D18 /* GCDStudy.swift in Sources */,
 				BDDC113A1E66BFE600EF1837 /* OcToSwift.swift in Sources */,
+				BD58E4E31E7A6F8100CA0D18 /* Single.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

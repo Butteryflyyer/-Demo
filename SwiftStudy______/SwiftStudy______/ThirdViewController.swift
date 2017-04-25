@@ -41,10 +41,7 @@ class ThirdViewController: BaseViewController {
             if var myname = name{
                 print(myname)
                 
-              
-                
-         
-                
+        
             }
         
         }
@@ -83,12 +80,28 @@ class ThirdViewController: BaseViewController {
         view.addSubview(btn)
         
         
+        let btnRuntime = UIButton.init(type: .contactAdd)
+        
+        btnRuntime.frame = CGRect(x: 0, y: 400, width: 100, height: 20)
+        
+        btnRuntime.xh_acceptEventInterval = 5.0
+        
+        btnRuntime.xh_ignoreEvent = false
+        
+        btnRuntime.addTarget(self, action: #selector(ThirdViewController.runtimeclick), for: .touchUpInside)
+        view.addSubview(btnRuntime)
+        
     }
     
     func click() -> Void {
-        
+       
         self.present(subSecondViewController(), animated: true, completion: nil)
         
+    }
+    func runtimeclick() -> Void{
+        
+         print("click")
+//        self.present(RunTimeViewController(), animated: true, completion: nil)
     }
   
 }
@@ -119,6 +132,7 @@ extension ThirdViewController : UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        self.navigationController?.pushViewController(AnimationViewController(), animated: true)
         
         print(indexPath.row)
         

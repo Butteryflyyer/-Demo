@@ -32,6 +32,28 @@ class FirstViewController: BaseViewController, SDCycleScrollViewDelegate{
         super.viewDidLoad()
 
         
+        let number = [1,2,3]
+        let result = number.map { (x) -> Int? in
+            return  x + 2
+        }
+        print(result)
+        
+        let results = number.flatMap { (x) -> Int? in
+            return x + 2
+        }
+        print(results)
+        
+        let resultss = number.filter { (x) -> Bool in
+            
+            return x % 2 == 0
+        }
+        print(resultss)
+        var initResult = 0
+        let resulteRuduce = number.reduce(initResult) { (resultt, x) -> Int in
+            return resultt + x
+        }
+        
+        print(resulteRuduce)
         title = "前小米"
         
         NetworkTools.shareInstance.requestData(methodType: .POST, urlString: "http://www.zyskcn.com/qdw/banner/get.act?type=0", parameters: nil) {[unowned self] (response, error) in

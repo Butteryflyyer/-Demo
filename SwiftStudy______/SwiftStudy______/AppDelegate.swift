@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
+//         print(unsafeBitCast(window!, to: UIWindow.self))
+        
         return true
     }
 
