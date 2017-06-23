@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'XH_Caipiao_app' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for XH_Caipiao_app
+    pod ‘IQKeyboardManager’
+  pod 'AFNetworking', '~> 3.0'
+  pod "XTSafeCollection"
+
+  target 'XH_Caipiao_appTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'XH_Caipiao_appUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

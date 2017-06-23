@@ -1,0 +1,21 @@
+//
+//  Caipiao_app.pch
+//  Caipiao_app
+//
+//  Created by 信昊 on 17/6/23.
+//  Copyright © 2017年 xinhao. All rights reserved.
+//
+
+#ifndef Caipiao_app_pch
+#define Caipiao_app_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "macro.h"
+#import "UIView+QDWExtension.h"
+#import "configu.h"
+#import "ShowAPIRequest.h"
+#import "NetManager.h"
+#import "MJExtension.h"
+#endif /* Caipiao_app_pch */
