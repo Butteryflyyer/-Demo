@@ -28,16 +28,16 @@ class ViewController: UIViewController, WKNavigationDelegate,WKScriptMessageHand
         let webView = WKWebView(frame: UIScreen.main.bounds, configuration: config)
         
 //        // 设置访问的URL
-        let url = NSURL(string: "https://www.baidu.com")
+//        let url = NSURL(string: "https://www.baidu.com")
         // 根据URL创建请求
-        let requst = NSURLRequest(url: url! as URL)
+//        let requst = NSURLRequest(url: url! as URL)
         // 设置代理
         webView.navigationDelegate = self
         // WKWebView加载请求
-        webView.load(requst as URLRequest)
+//        webView.load(requst as URLRequest)
 
-//        let htmlStr = try?String(contentsOfFile: Bundle.main.path(forResource: "jsDemo", ofType: "html")!)
-//        webView.loadHTMLString(htmlStr!, baseURL: nil)
+        let htmlStr = try?String(contentsOfFile: Bundle.main.path(forResource: "jsDemo", ofType: "html")!)
+        webView.loadHTMLString(htmlStr!, baseURL: nil)
 //        // 将WebView添加到当前view
         view.addSubview(webView)
 //        
@@ -106,7 +106,7 @@ class ViewController: UIViewController, WKNavigationDelegate,WKScriptMessageHand
                 print(info)
                 print(error)
             })
-            self?.wkView?.evaluateJavaScript("showAlert()", completionHandler: { (info, error) in
+            self?.wkView?.evaluateJavaScript("showAlert('ppp')", completionHandler: { (info, error) in
                 
                 print(info)
                 
