@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarContrllerViewController.h"
+#import "AdvertiseView.h"
 @interface AppDelegate ()
 
 @end
@@ -20,10 +21,21 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
+    
+    
+    if ([NSUSER_OBJECTFORRKEY(QDWSaveUserId) length] > 0) {
+        
+        [QDWUser shareManager].Userid      = NSUSER_OBJECTFORRKEY(QDWSaveUserId);
+        
+    }else{
+        
+        [QDWUser shareManager].Userid       = nil;
+        
+    }
     TabBarContrllerViewController *TaB = [[TabBarContrllerViewController alloc]init];
     
     self.window.rootViewController = TaB;
-
+    
     
     return YES;
 }

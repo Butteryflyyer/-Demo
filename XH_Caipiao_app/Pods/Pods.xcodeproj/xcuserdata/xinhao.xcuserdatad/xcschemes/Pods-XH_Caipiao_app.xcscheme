@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '86AE5854BBD1B74A21F95BD6FE52A6C8'
+               BlueprintIdentifier = 'F79DB4DB30095C8BF291FEC7774C7F89'
                BlueprintName = 'Pods-XH_Caipiao_app'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-XH_Caipiao_app.a'>
+               BuildableName = 'Pods-XH_Caipiao_app.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

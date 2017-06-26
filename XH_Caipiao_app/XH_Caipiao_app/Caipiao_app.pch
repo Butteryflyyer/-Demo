@@ -18,4 +18,22 @@
 #import "ShowAPIRequest.h"
 #import "NetManager.h"
 #import "MJExtension.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "ShowMessageView.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "RACEXTScope.h"
+#import "QDWTools.h"
+#import "QDWTools+Validate.h"
+#import "Caipiao_UserManager.h"
+#import "QDWTools+AlertController.h"
+#import "QDWTools+UICreat.h"
+#import "SVProgressHUD.h"
+#import "SSKeychain.h"
+#import "QDWConst.h"
+#import "QDWUser.h"
+#import "Configure_URL.h"
+#import "QDWLoginManager.h"
+#import "XHNetWorking.h"
+#import "Caipiao_Model.h"
+#import "MJRefresh.h"
 #endif /* Caipiao_app_pch */

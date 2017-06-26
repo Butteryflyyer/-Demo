@@ -17,9 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addNavBarTitle:@"开奖"];
+    [self initUI];
+    
     // Do any additional setup after loading the view.
 }
-
+-(void)initUI{
+    
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

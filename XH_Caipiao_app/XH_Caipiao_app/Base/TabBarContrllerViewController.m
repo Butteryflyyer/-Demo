@@ -11,7 +11,7 @@
 #import "Mine_Vc.h"
 #import "kaijiang_Vc.h"
 #import "Zixun_Vc.h"
-
+#import "Login_Vc.h"
 @interface TabBarContrllerViewController ()<UITabBarControllerDelegate>
 
 /** smallCircleImageView */
@@ -92,9 +92,10 @@
 - (void)setupChildVcs {
 
     // 添加4个子控制器
-    [self setupChildVc:[[Zixun_Vc alloc] init] title:@"咨询" image:@"ToolBar首页" selectedImage:@"ToolBar首页-状态"];
-    [self setupChildVc:[[Kaijiang_Vc alloc] init] title:@"开奖" image:@"ToolBar找单" selectedImage:@"ToolBar找单-状态"];
+    [self setupChildVc:[[Zixun_Vc alloc] init] title:@"资讯" image:@"ToolBar首页" selectedImage:@"ToolBar首页-状态"];
     [self setupChildVc:[[Zoushi_Vc alloc] init] title:@"彩票种类" image:@"ToolBar发单" selectedImage:@"ToolBar发单-状态"];
+    [self setupChildVc:[[Kaijiang_Vc alloc] init] title:@"开奖" image:@"ToolBar找单" selectedImage:@"ToolBar找单-状态"];
+
     [self setupChildVc:[[Mine_Vc alloc] init] title:@"我的" image:@"ToolBar我的" selectedImage:@"ToolBar我的-状态"];
 
 }
@@ -141,10 +142,25 @@
     [self addChildViewController:nav];
 
 }
-//-(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-//
-//
-//}
+-(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+        Login_Vc *Login   = [[Login_Vc alloc]init];
+    if ([viewController.childViewControllers[0] isKindOfClass:[Mine_Vc class]] ||[viewController.childViewControllers[0] isKindOfClass:[Kaijiang_Vc class]] ) {
+        
+        if (![QDWUser shareManager].Userid.length) {
+            Login.hidesBottomBarWhenPushed = YES;
+            
+            [(UINavigationController *)[tabBarController.viewControllers objectAtIndex:tabBarController.selectedIndex] pushViewController:Login animated:YES];
+            
+            return NO;
+        }else{
+            return YES;
+       }
+    }else{
+        return YES;
+    }
+
+
+}
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
     NSInteger index = [self.tabBar.items indexOfObject:item];
     [self animationWithIndex:index];//动画

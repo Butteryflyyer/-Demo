@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Regist_View">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有账号？" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XK-w2-jd8">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="XbH-X6-QMc"/>
+                        <constraint firstAttribute="width" constant="110" id="ZWg-fg-kP8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iU0-He-JB2">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="34e-ng-Ygx"/>
+                        <constraint firstAttribute="width" constant="68" id="N3Y-LB-V8K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="立即注册">
+                        <color key="titleColor" red="0.27843137254901962" green="0.63529411764705879" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0XK-w2-jd8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="06l-VC-uef"/>
+                <constraint firstItem="0XK-w2-jd8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Yqz-JD-PbV"/>
+                <constraint firstItem="iU0-He-JB2" firstAttribute="leading" secondItem="0XK-w2-jd8" secondAttribute="trailing" id="dJG-oL-GFN"/>
+                <constraint firstItem="iU0-He-JB2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uMf-CX-kqw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="Regist_btn" destination="iU0-He-JB2" id="LN1-vv-GYa"/>
+                <outlet property="Title_Detail_Label" destination="0XK-w2-jd8" id="sp5-mN-buo"/>
+            </connections>
+            <point key="canvasLocation" x="-44" y="-249"/>
+        </view>
+    </objects>
+</document>

@@ -9,8 +9,8 @@
 #ifndef ___macro_h
 #define ___macro_h
 
-
-
+#define FormatCicle_btn_ImageName @"钱到位圆角按钮" //300 70
+#define FormatMidCicle_btn_ImageName @"钱到位中等长度圆角矩形" //490 80
 
 #define Time_SelectedTools 0.2
 
