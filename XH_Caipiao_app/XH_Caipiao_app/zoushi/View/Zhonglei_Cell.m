@@ -28,7 +28,8 @@
         UILabel *label = [QDWTools initLabelWithText:arr[i] WithTextColor:_COLOR_RGB(0xffffff) Withfont:10 WithFrame:CGRectMake(MaxX(self.Title)+5+(5+22)*i, MaxY(self.Title), 22, 30) WithTextAlit:NSTextAlignmentCenter];
         
         label.backgroundColor = [UIColor redColor];
-        
+        label.layer.cornerRadius = 22/2;
+         label.layer.masksToBounds = YES;
         [self addSubview:label];
     }
     

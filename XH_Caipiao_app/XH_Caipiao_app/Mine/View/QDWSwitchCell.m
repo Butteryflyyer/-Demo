@@ -48,24 +48,6 @@
 //    }
     
 
-    [MinePageManager FindUserAppMsgSettingSuccess:^(id data) {
-        if (data) {
-
-            if ([data isEqual:@"1"]) {
-                [self.SwitchBtn setOn:YES];
-                
-//                [UmengManager UmengaddAlisWithCity:[QDWUser shareManager].UserCity];
-            }else{
-                
-                [self.SwitchBtn setOn:NO];
-              
-//                 [UmengManager UmengRemoveAlis];
-            }
-            
-            
-        }
-        
-    }];
     
     
    
@@ -97,20 +79,7 @@
 
     }
     
-    [MinePageManager AppSettingPushMsgWithmsgEnable:msgEnble Success:^(id data) {
-        if (data) {
-            if ([msgEnble isEqual:@"1"]) {
-                 [UmengManager UmengaddAlisWithCity:[QDWUser shareManager].UserCity];
-            }
-           
-            if ([msgEnble isEqual:@"0"]) {
-                   [UmengManager UmengRemoveAlis];
-                
-            }
-        }
-    }];
-    
-
+  
     
     
 }

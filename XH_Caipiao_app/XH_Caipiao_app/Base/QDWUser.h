@@ -30,6 +30,9 @@ STRING(PayOrderId); // 微信 订单支付的id
 STRING(AliOrderId); // 支付宝 订单支付的id
 
 
+@property(nonatomic,assign)CGFloat latitude;
+
+@property(nonatomic,assign)CGFloat longitude;
 
 +(QDWUser *)shareManager;
 /**

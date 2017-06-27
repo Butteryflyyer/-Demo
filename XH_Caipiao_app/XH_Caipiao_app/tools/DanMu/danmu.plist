@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>002</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>11选5</string>
+		<key>text</key>
+		<string>07 04 02 06 08</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>001</string>
+			<string>001</string>
+		</array>
+		<key>username</key>
+		<string>排列3</string>
+		<key>text</key>
+		<string>5 4 4</string>
+		<key>type</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>003</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>时时彩</string>
+		<key>text</key>
+		<string>1 6 4 5 4</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>001</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>体彩</string>
+		<key>text</key>
+		<string>08 09 10 18 20 21 31 24</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>002</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>时时彩</string>
+		<key>text</key>
+		<string>3 9 3 0 2</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>002</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>幸运赛车</string>
+		<key>text</key>
+		<string>08 06 01</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>002</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>快乐十分</string>
+		<key>text</key>
+		<string>09 19 05 10 14 13 11 20</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>002</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>快三</string>
+		<key>text</key>
+		<string>2 4 4</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>002</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>时时乐</string>
+		<key>text</key>
+		<string>849</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>002</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>幸运农产</string>
+		<key>text</key>
+		<string>8 4 9</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>enmotios</key>
+		<array>
+			<string>001</string>
+			<string>002</string>
+			<string>003</string>
+		</array>
+		<key>username</key>
+		<string>大乐透</string>
+		<key>text</key>
+		<string>01 04 23 02</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+</array>
+</plist>

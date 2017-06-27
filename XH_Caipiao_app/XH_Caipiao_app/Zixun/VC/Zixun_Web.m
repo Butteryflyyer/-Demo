@@ -26,7 +26,7 @@
     
     [[NSURLCache sharedURLCache]removeAllCachedResponses];
     // 加载网页
-    NSURL * url = [NSURL URLWithString:@"http://www.zhcw.com/xinwen/caizhongxinwen-ssq/11678892.shtml"];
+    NSURL * url = [NSURL URLWithString:self.url];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
 
@@ -36,7 +36,21 @@
     
     // Do any additional setup after loading the view.
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [SVProgressHUD showWithStatus:@"加载中"];
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+      [SVProgressHUD dismiss];
+}
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [SVProgressHUD dismiss];
+}
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+     [SVProgressHUD dismiss];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

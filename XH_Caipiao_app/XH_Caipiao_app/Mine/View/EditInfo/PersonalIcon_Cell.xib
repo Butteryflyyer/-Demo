@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PersonalIcon_Cell" rowHeight="71" id="KGk-i7-Jjw" customClass="PersonalIcon_Cell">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="344" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQO-sa-rp8">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPM-f4-suk">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Cv4-n6-0vZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="个人中心头像默认" translatesAutoresizingMaskIntoConstraints="NO" id="RL0-hD-v5D">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="07P-jo-49v"/>
+                                    <constraint firstAttribute="width" constant="60" id="Z0p-7d-29c"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RL0-hD-v5D" firstAttribute="centerY" secondItem="NQO-sa-rp8" secondAttribute="centerY" id="ApQ-lN-sKR"/>
+                            <constraint firstItem="BPM-f4-suk" firstAttribute="centerY" secondItem="NQO-sa-rp8" secondAttribute="centerY" id="ToU-xU-uyl"/>
+                            <constraint firstItem="BPM-f4-suk" firstAttribute="leading" secondItem="NQO-sa-rp8" secondAttribute="leading" constant="15" id="amO-sj-2bJ"/>
+                            <constraint firstAttribute="trailing" secondItem="RL0-hD-v5D" secondAttribute="trailing" constant="10" id="qSA-fR-wKl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NQO-sa-rp8" secondAttribute="bottom" id="E0B-h8-Zg8"/>
+                    <constraint firstAttribute="trailing" secondItem="NQO-sa-rp8" secondAttribute="trailing" id="WRe-Lb-3B2"/>
+                    <constraint firstItem="NQO-sa-rp8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="h9f-1r-tGT"/>
+                    <constraint firstItem="NQO-sa-rp8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rte-cf-axA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="PersonIconImg" destination="RL0-hD-v5D" id="1aO-yc-QHp"/>
+            </connections>
+            <point key="canvasLocation" x="62.5" y="67.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="个人中心头像默认" width="120" height="120"/>
+    </resources>
+</document>

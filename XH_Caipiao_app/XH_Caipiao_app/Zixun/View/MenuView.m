@@ -53,7 +53,7 @@
     self.ActivityView = [[[NSBundle mainBundle]loadNibNamed:@"MenuSubView" owner:self options:nil]firstObject];
     self.ActivityView.frame = CGRectMake(MaxX(self.FireOrderView)+midGap, TopGap, Selected_Width, Selected_Height);
     self.ActivityView.NowImage = IMG(@"首页活动");
-    self.ActivityView.NowText = @"活动";
+    self.ActivityView.NowText = @"新闻";
     
     [self addSubview:self.ActivityView];
     

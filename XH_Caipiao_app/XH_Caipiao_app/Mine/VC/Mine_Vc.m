@@ -9,10 +9,17 @@
 #import "Mine_Vc.h"
 #import "JSHeaderView.h"
 #import "MineNormal_Cell.h"
+#import "QDWSettingViewController.h"
+#import "ViewController.h"
+#import "PersonalInfoEditVc.h"
+#import <SDWebImage/UIImage+MultiFormat.h>
+#import <SDWebImage/SDWebImageManager.h>
 @interface Mine_Vc ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) JSHeaderView *headerView;
 
 @property(nonatomic,strong)UITableView *tableView;
+
+@property(nonatomic,strong)QDWUserPersonalInfo *userInfo;
 @end
 
 @implementation Mine_Vc
@@ -32,7 +39,7 @@
         [alertView show];
     }];
 
-   
+    [self loadUserInfoWithjump:0];
     
     
     // Do any additional setup after loading the view.
@@ -68,28 +75,77 @@
     return cell;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *header = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50)];
+    UIView *header = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
     header.backgroundColor = _COLOR_RGB(0xf5f5f5);
-    UILabel *label = [QDWTools initLabelWithText:@"" WithTextColor:[UIColor blackColor] Withfont:17 WithFrame:CGRectMake(20, 10, 60, 30) WithTextAlit:NSTextAlignmentCenter];
+    UILabel *label = [QDWTools initLabelWithText:@"" WithTextColor:[UIColor blackColor] Withfont:17 WithFrame:CGRectMake(20, 10, 100, 30) WithTextAlit:NSTextAlignmentCenter];
+    label.centerY = 100/2;
+    label.centerX = SCREEN_WIDTH/2;
     label.centerX = header.centerX;
-    label.text = [QDWUser shareManager].UserTelephone;
+    label.text = [QDWUser shareManager].Username ;
     [header addSubview:label];
     return header;
 
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 50;
+    return 100;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        ViewController *vc = [[ViewController alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.row == 1) {
+        
+        [self loadUserInfoWithjump:1];
+    }
+    if (indexPath.row == 4) {
+        QDWSettingViewController *vc = [[QDWSettingViewController alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+          [self.navigationController pushViewController:vc animated:YES];  
+    }
+    
 
-//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 50;
 }
+- (void)loadUserInfoWithjump:(NSInteger)jump {
+    [SVProgressHUD showWithStatus:@"加载中"];
+    @weakify(self)
+    [MinePageManager getMySelfInfoWithSuccessBlock:^(id data) {
+        [SVProgressHUD dismiss];
+        @strongify(self)
+        if (data) {
+            
+            self.userInfo = [QDWUserPersonalInfo mj_objectWithKeyValues:data];
+           
+            if (jump == 1) {
+                PersonalInfoEditVc *vc = [[PersonalInfoEditVc alloc]init];
+                vc.hidesBottomBarWhenPushed = YES;
+                vc.UserInfo = self.userInfo;
+                
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                
+                SDWebImageManager *manager = [SDWebImageManager sharedManager];
+               [ manager downloadImageWithURL:[NSURL URLWithString:self.userInfo.userInfo.avatarpath] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                    
+                } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                    
+                    self.headerView.image = image;
+                    
+                }];
+  
+            }
+        }
+    }];
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -18,7 +18,7 @@
 #import "ShowAPIRequest.h"
 #import "NetManager.h"
 #import "MJExtension.h"
-#import <SDWebImage/UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 #import "ShowMessageView.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "RACEXTScope.h"
@@ -36,4 +36,11 @@
 #import "XHNetWorking.h"
 #import "Caipiao_Model.h"
 #import "MJRefresh.h"
+#import "Masonry.h"
+#import "Header.h"
+#import "QDWUserPersonalInfo.h"
+#import "UIView+SDAutoLayout.h"
+#import "Base64codeFunc.h"
+#import "Base64Util.h"
+#import "MinePageManager.h"
 #endif /* Caipiao_app_pch */

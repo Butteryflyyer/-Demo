@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface Zixun_Web : BaseViewController
-
+@property(nonatomic,copy)NSString *url;
 @end

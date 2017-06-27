@@ -55,7 +55,7 @@ static NSString *const CellId = @"Login_normal_Cell";
 -(void)initUI{
     [self.view addSubview:self.scrollView];
     
-    self.Logo_Image = [[UIImageView alloc]initWithImage:IMG(@"logo_登录")];
+    self.Logo_Image = [[UIImageView alloc]initWithImage:IMG(@"个人中心头像默认")];
     self.Logo_Image.frame = CGRectMake(0, QDWRealValue(90), QDWRealValue(75), QDWRealValue(75));
     self.Logo_Image.centerX = SCREEN_WIDTH/2;
     [self.scrollView addSubview:self.Logo_Image];

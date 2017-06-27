@@ -19,7 +19,8 @@
         
         shareManager = [[self alloc]init];
         
-        
+        shareManager.longitude = 0;
+        shareManager.latitude = 0;
         
     });
     

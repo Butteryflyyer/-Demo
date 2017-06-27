@@ -9,7 +9,7 @@
 
 #import "QDWSettingViewController.h"
 #import "QDWCapitalAccountCell.h"
-
+#import "QDWSwitchCell.h"
 @interface QDWSettingViewController () <UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIButton *exitBtn;

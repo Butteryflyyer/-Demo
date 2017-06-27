@@ -42,11 +42,11 @@
 -(void)setNowRow:(NSInteger)NowRow{
     _NowRow = NowRow;
     if (NowRow == 0) {
-        [self reloadCellWithImg:@"个人中心消息" WithTitle:@"消息中心"];
+        [self reloadCellWithImg:@"个人中心消息" WithTitle:@"我的朋友圈"];
     }
     if (NowRow == 1) {
-        [self reloadCellWithImg:@"个人中心邀请好友" WithTitle:@"邀请好友"];
-        self.InvitGiftLabel.hidden = NO;
+        [self reloadCellWithImg:@"个人中心邀请好友" WithTitle:@"编辑个人中心"];
+        self.InvitGiftLabel.hidden = YES;
     }
     if (NowRow == 2) {
         [self reloadCellWithImg:@"个人中心商务合作" WithTitle:@"商务合作"];

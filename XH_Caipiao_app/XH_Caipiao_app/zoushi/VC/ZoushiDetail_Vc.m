@@ -27,7 +27,7 @@
     self.datasouce = [[NSMutableArray alloc]init];
 }
 -(void)initUI{
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 10, SCREEN_WIDTH, SCREEN_HEIGHT - 10) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 10) style:UITableViewStylePlain];
     self.tableView.backgroundColor = _COLOR_RGB(0xf5f5f5);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -66,7 +66,7 @@
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 50;
+    return 120;
 }
 
 -(void)loadata{

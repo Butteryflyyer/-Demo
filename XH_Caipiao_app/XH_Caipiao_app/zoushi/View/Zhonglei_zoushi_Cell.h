@@ -11,5 +11,8 @@
 @interface Zhonglei_zoushi_Cell : UITableViewCell
 
 @property(nonatomic,strong)Caipiao_Model *model;
+@property (weak, nonatomic) IBOutlet UILabel *name_label;
+@property (weak, nonatomic) IBOutlet UILabel *qishu_label;
+@property (weak, nonatomic) IBOutlet UILabel *time_label;
 
 @end

@@ -17,16 +17,20 @@
 -(void)setModel:(Caipiao_Model *)model{
     _model = model;
     
+      self.name_label.text = model.name;
+    self.qishu_label.text = [NSString stringWithFormat:@"第%@期",model.expect];
+    self.time_label.text = [NSString stringWithFormat:@"时间%@",model.time];
+    
     NSMutableArray *arr = [self getcodeArr];
     for (NSInteger i = 0; i < arr.count; i++) {
-        UILabel *label = [QDWTools initLabelWithText:arr[i] WithTextColor:_COLOR_RGB(0xffffff) Withfont:10 WithFrame:CGRectMake(10+10+(10+22)*i, 10, 22, 30) WithTextAlit:NSTextAlignmentCenter];
-        label.centerY = self.frame.size.height/2;
+        UILabel *label = [QDWTools initLabelWithText:arr[i] WithTextColor:_COLOR_RGB(0xffffff) Withfont:10 WithFrame:CGRectMake(10+5+(5+22)*i, MaxY(self.time_label)+10, 20, 20) WithTextAlit:NSTextAlignmentCenter];
+
         label.backgroundColor = [UIColor redColor];
-        
+        label.layer.cornerRadius = 20/2;
+        label.layer.masksToBounds = YES;
         [self addSubview:label];
     }
-    
-    
+
     
 }
 -(NSMutableArray *)getcodeArr{

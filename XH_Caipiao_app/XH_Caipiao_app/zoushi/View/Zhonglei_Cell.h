@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *IconView;
 @property (weak, nonatomic) IBOutlet UILabel *Title;
 @property(nonatomic,strong)Caipiao_Model *model;
+@property (weak, nonatomic) IBOutlet UILabel *descrition_label;
 
 @property(nonatomic,strong)NSIndexPath *indexpaht;
 @end
