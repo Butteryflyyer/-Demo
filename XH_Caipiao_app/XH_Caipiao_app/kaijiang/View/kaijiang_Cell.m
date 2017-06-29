@@ -19,7 +19,7 @@
 -(void)setModel:(Caipiao_Model *)model{
     _model = model;
     
-//    self.name_label.text = model.name;
+    self.name_label.text = model.name;
     self.qishu_label.text = [NSString stringWithFormat:@"第%@期",model.expect];
     self.time_label.text = [NSString stringWithFormat:@"时间%@",model.time];
     

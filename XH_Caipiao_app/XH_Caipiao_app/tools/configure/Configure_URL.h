@@ -20,13 +20,25 @@
 
 #define Gaode_appkey @"b6dc28baa31ce271c72b3b742aef8ba6"
 
-#define Umeng_AppKey @"59521e1f677baa5fd9001cad" //推送
+#define Umeng_AppKey @"59536445734be4241f0003a6" //推送
 
-#define Umeng_master @"jq0h332jpn4pblqxvldi1zl2joigfobg" //推送
+#define Umeng_master @"3msulclxpakhpmm2vxesndcr0pijtkvv" //推送
 
 #define KeyChain_Service @"com.caipiao_app.www"//keychain  service
 
 #define QDWFormal_URL @"https://app.qiandaowei.com/qdw/"//正式服务器
+
+#define Bobm_Application_ID @"4fdcd85f77b45484bb416ab5e239812e"
+
+#define Bobm_REST_API_Key @"f403af169e1d19a8380002bf109c353e"
+
+#define Bobm_Secret_key @"e4cad396fed571ec"
+
+#define Bobm_Master_key @"1ae9c898ae6854086a00653a02c177b4"
+
+
+
+
 
 #define QDWLogin_URL  @"UserController/mobileLogin.act?" // 登录接口
 

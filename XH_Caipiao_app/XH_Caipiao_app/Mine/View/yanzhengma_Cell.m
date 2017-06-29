@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.title_detaile_textField.userInteractionEnabled = NO;
+//    self.title_detaile_textField.userInteractionEnabled = NO;
     // Initialization code
 }
 

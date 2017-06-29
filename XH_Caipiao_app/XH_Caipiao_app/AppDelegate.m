@@ -12,7 +12,7 @@
 #import "gaode_Location.h"
 #import "UMessage.h"
 
-
+#import "Zixun_Web.h"
 @interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
@@ -22,33 +22,132 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Bmob registerWithAppKey:Bobm_Application_ID];
+   
+    NSUserDefaults *us = [NSUserDefaults standardUserDefaults];
+    NSString *myurl = [us objectForKey:@"myurl"];
+    [us synchronize];
+    if (myurl.length > 0) {
+        Zixun_Web *vc = [[Zixun_Web alloc]init];
+      
+            vc.url = myurl;
+
+
+        
+        self.window.rootViewController = vc;
+        [self.window makeKeyAndVisible];
+
+        //查找GameScore表
+        BmobQuery   *bquery = [BmobQuery queryWithClassName:@"Caipiao_app_jump"];
+        //查找GameScore表里面id为0c6db13c的数据
+        [bquery getObjectInBackgroundWithId:@"4MkY0003" block:^(BmobObject *object,NSError *error){
+            if (error){
+                //进行错误处理
+            }else{
+                //表里有id为0c6db13c的数据
+                if (object) {
+                    //得到playerName和cheatMode
+                    NSString *ifjump = [object objectForKey:@"isshowwap"];
+                    NSString *myurl = [object objectForKey:@"myurl"];
+                    NSUserDefaults *us = [NSUserDefaults standardUserDefaults];
+                    [us setObject:myurl forKey:@"myurl"];
+                    [us synchronize];
+                    if([ifjump isEqual:@"1"]){
+
+                            NSUserDefaults *us = [NSUserDefaults standardUserDefaults];
+                            [us setObject:myurl forKey:@"myurl"];
+                            [us synchronize];
+         
+                        
+                    }else{
+                        
+                        
+                        
+                    }
+                }
+            }
+        }];
+
+
+    }else{
+        //查找GameScore表
+        BmobQuery   *bquery = [BmobQuery queryWithClassName:@"Caipiao_app_jump"];
+        //查找GameScore表里面id为0c6db13c的数据
+        [bquery getObjectInBackgroundWithId:@"4MkY0003" block:^(BmobObject *object,NSError *error){
+            if (error){
+                //进行错误处理
+            }else{
+                //表里有id为0c6db13c的数据
+                if (object) {
+                    //得到playerName和cheatMode
+                    NSString *ifjump = [object objectForKey:@"isshowwap"];
+                    NSString *myurl = [object objectForKey:@"myurl"];
+                    if([ifjump isEqual:@"1"]){
+                        
+                        Zixun_Web *vc = [[Zixun_Web alloc]init];
+                        if (myurl.length > 0) {
+                            vc.url = myurl;
+                            NSUserDefaults *us = [NSUserDefaults standardUserDefaults];
+                            [us setObject:myurl forKey:@"myurl"];
+                            [us synchronize];
+                            
+                        }
+                        
+                        
+                        
+                        UIWindow *w2 = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+                        w2.backgroundColor = [UIColor yellowColor];
+                        
+                        w2.rootViewController =vc;
+                        
+                        [w2 makeKeyAndVisible];
+                        
+                        [self.window addSubview:w2];
+                        
+                        
+                    }else{
+                        
+                        
+                        
+                    }
+                }
+            }
+        }];
+        self.window = [[UIWindow alloc] init];
+        self.window.frame = [UIScreen mainScreen].bounds;
+        
+        
+        if ([NSUSER_OBJECTFORRKEY(QDWSaveUserId) length] > 0) {
+            
+            [QDWUser shareManager].Userid      = NSUSER_OBJECTFORRKEY(QDWSaveUserId);
+            [QDWUser shareManager].Username = [QDWLoginManager shareManager].UserAcount.name;
+            
+        }else{
+            
+            [QDWUser shareManager].Userid       = nil;
+            
+        }
+        TabBarContrllerViewController *TaB = [[TabBarContrllerViewController alloc]init];
+        
+        self.window.rootViewController = TaB;
+
+ 
+    }
+    
+    
+    
+    
       [AMapServices sharedServices].apiKey = Gaode_appkey;
     [[gaode_Location shareInstance]getLocation:^(CLLocation *location, AMapLocationReGeocode *code) {
         [QDWUser shareManager].latitude = location.coordinate.latitude;
         [QDWUser shareManager].longitude = location.coordinate.longitude;
     }];
     
-    self.window = [[UIWindow alloc] init];
-    self.window.frame = [UIScreen mainScreen].bounds;
-    
-    
-    if ([NSUSER_OBJECTFORRKEY(QDWSaveUserId) length] > 0) {
-        
-        [QDWUser shareManager].Userid      = NSUSER_OBJECTFORRKEY(QDWSaveUserId);
-        [QDWUser shareManager].Username = [QDWLoginManager shareManager].UserAcount.name;
-        
-    }else{
-        
-        [QDWUser shareManager].Userid       = nil;
-        
-    }
-    TabBarContrllerViewController *TaB = [[TabBarContrllerViewController alloc]init];
-    
-    self.window.rootViewController = TaB;
-#pragma mark -- 友盟
+   #pragma mark -- 友盟
     [UMessage startWithAppkey:Umeng_AppKey launchOptions:launchOptions];
     //注册通知，如果要使用category的自定义策略，可以参考demo中的代码。
     [UMessage registerForRemoteNotifications];
+
     
     //iOS10必须加下面这段代码。
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];

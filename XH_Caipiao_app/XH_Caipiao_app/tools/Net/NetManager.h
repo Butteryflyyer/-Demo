@@ -12,6 +12,7 @@ typedef enum : NSUInteger {
     ZuiXin_Style,
     Duoqi_Style,
     Danqi_Style,
+    Xinwen_Style,
 } Selet_enum;
 
 @interface NetManager : NSObject

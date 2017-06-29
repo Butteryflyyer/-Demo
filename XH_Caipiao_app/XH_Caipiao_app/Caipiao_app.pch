@@ -43,4 +43,7 @@
 #import "Base64codeFunc.h"
 #import "Base64Util.h"
 #import "MinePageManager.h"
+#import "SGPageView.h"
+#import "DanmuManager.h"
+#import <BmobSDK/BmobSDK.h>
 #endif /* Caipiao_app_pch */

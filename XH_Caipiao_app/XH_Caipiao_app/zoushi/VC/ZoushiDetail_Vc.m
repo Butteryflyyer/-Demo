@@ -49,7 +49,7 @@
     
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 10;
+    return self.datasouce.count;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 1;

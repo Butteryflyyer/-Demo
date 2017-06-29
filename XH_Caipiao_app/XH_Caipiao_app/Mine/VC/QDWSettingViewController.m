@@ -10,6 +10,7 @@
 #import "QDWSettingViewController.h"
 #import "QDWCapitalAccountCell.h"
 #import "QDWSwitchCell.h"
+#import "ForgetSecretViewController.h"
 @interface QDWSettingViewController () <UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIButton *exitBtn;
@@ -62,7 +63,7 @@ static NSString *SwitchID = @"QDWSwitchCell";
     if (section == 0) {
         return 1;
     }else{
-         return 4;
+         return 1;
     }
     
   
@@ -89,19 +90,7 @@ static NSString *SwitchID = @"QDWSwitchCell";
         {
             cell.titleLabel.text = @"登录密码";
             
-        } else if (1 == indexPath.row) // 第1行
-        {
-            cell.titleLabel.text = @"支付密码";
-            
-        } else if (2 == indexPath.row) // 第2行
-        {
-            cell.titleLabel.text = @"意见反馈";
-            
-        } else if (3 == indexPath.row) // 第3行
-        {
-            cell.titleLabel.text = @"关于我们";
         }
-               
         
         
         return cell;
@@ -122,6 +111,9 @@ static NSString *SwitchID = @"QDWSwitchCell";
         
         if (0 == indexPath.row) // 第0行
         {
+            ForgetSecretViewController *forget_vc = [[ForgetSecretViewController alloc]init];
+            forget_vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:forget_vc animated:YES];
 
             
         } else if (1 == indexPath.row)//第1行

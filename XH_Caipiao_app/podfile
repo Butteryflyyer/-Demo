@@ -6,6 +6,7 @@ target 'XH_Caipiao_app' do
    use_frameworks!
 
   # Pods for XH_Caipiao_app
+pod 'BmobSDK'
 pod 'AMapSearch'
 pod 'AMap3DMap'
 pod 'AMapLocation'

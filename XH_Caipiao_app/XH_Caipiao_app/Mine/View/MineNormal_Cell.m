@@ -48,13 +48,8 @@
         [self reloadCellWithImg:@"个人中心邀请好友" WithTitle:@"编辑个人中心"];
         self.InvitGiftLabel.hidden = YES;
     }
+
     if (NowRow == 2) {
-        [self reloadCellWithImg:@"个人中心商务合作" WithTitle:@"商务合作"];
-    }
-    if (NowRow == 3) {
-        [self reloadCellWithImg:@"个人中心钱小秘" WithTitle:@"钱小秘"];
-    }
-    if (NowRow == 4) {
          [self reloadCellWithImg:@"个人中心设置" WithTitle:@"设置"];
     }
     

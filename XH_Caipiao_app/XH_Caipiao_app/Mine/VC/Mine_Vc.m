@@ -35,16 +35,19 @@
     self.navigationItem.titleView = self.headerView;
     
     [self.headerView handleClickActionWithBlock:^{
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"您点击了头像" message:@"" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-        [alertView show];
+//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"您点击了头像" message:@"" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+//        [alertView show];
     }];
 
-    [self loadUserInfoWithjump:0];
+    
     
     
     // Do any additional setup after loading the view.
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self loadUserInfoWithjump:0];
+}
 -(void)initUI{
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 10) style:UITableViewStylePlain];
     self.tableView.backgroundColor = _COLOR_RGB(0xf5f5f5);
@@ -65,7 +68,7 @@
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 3;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MineNormal_Cell * cell = [tableView dequeueReusableCellWithIdentifier:@"MineNormal_Cell"];
@@ -101,7 +104,7 @@
         
         [self loadUserInfoWithjump:1];
     }
-    if (indexPath.row == 4) {
+    if (indexPath.row == 2) {
         QDWSettingViewController *vc = [[QDWSettingViewController alloc]init];
         vc.hidesBottomBarWhenPushed = YES;
           [self.navigationController pushViewController:vc animated:YES];  
@@ -136,7 +139,9 @@
                     
                 } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
                     
-                    self.headerView.image = image;
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                            self.headerView.image = image;
+                    });
                     
                 }];
   

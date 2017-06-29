@@ -37,6 +37,8 @@
     self.navigationItem.rightBarButtonItems = @[SearchBtn,fixspace];
 
 
+     [[DanmuManager shareManager] ShowDanmuWithView:self.view];
+    
     // Do any additional setup after loading the view.
 }
 

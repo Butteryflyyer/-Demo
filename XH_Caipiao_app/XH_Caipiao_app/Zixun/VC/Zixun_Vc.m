@@ -19,14 +19,9 @@
 #import "ADRollView.h"
 #import "ADRollModel.h"
 #import "UIColor+ColorHelper.h"
-#import "Xinwen_Vc.h"
+#import "Xinwen_base_Vc.h"
 
-#import "HLDanMuImage.h"
 
-#import "HLDanMuModel.h"
-
-#import "HLDanMuManagerView.h"
-#import<libkern/OSAtomic.h>
 @interface Zixun_Vc ()<CycleScrollViewDelegate>
 
 @property(nonatomic,strong)CycleScrollView *Cycle_View;
@@ -42,8 +37,7 @@
 
 @property(nonatomic,strong)UIScrollView *BackScrollView;
 
-//弹幕视图
-@property (nonatomic, strong)  HLDanMuManagerView *danmuView;
+
 
 @property (nonatomic, strong) NSMutableArray *danmuDataSources;
 @end
@@ -52,7 +46,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadData];
+  
     [self addNavBarTitle:@"资讯"];
     [self.view addSubview:self.BackScrollView];
     [self initUI];
@@ -76,70 +70,9 @@
         
     });
     
-    self.danmuView = [[[NSBundle mainBundle]loadNibNamed:@"HLDanMuManagerView" owner:self options:nil]firstObject];
+    [[DanmuManager shareManager]ShowDanmuWithView:self.view];
     
-    self.danmuView.frame = CGRectMake(0, 10, SCREEN_WIDTH, 400);
-    
-    self.danmuView.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0];
-    
-    [self.view addSubview:self.danmuView];
-    
-    [self.view bringSubviewToFront:self.danmuView];
-    
-    self.danmuView.userInteractionEnabled = NO;
-    _danmuDataSources   = [NSMutableArray array];
-    
-    //预加载数据
-    NSString *path      = [[NSBundle mainBundle] pathForResource:@"danmu" ofType:@"plist"];
-    NSArray *dataSource = [NSArray arrayWithContentsOfFile:path];
-    
-    //产生模型
-    [dataSource enumerateObjectsUsingBlock:^(NSDictionary *  _Nonnull dict, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        HLDanMuModel *model = [[HLDanMuModel alloc] initWithDic:dict];
-        
-        [_danmuDataSources addObject:model];
-        
-    }];
-    
-    __block int32_t timeOutCount=10;
-    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
-    
-    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 2ull * NSEC_PER_SEC, 0);
-    dispatch_source_set_event_handler(timer, ^{
-        OSAtomicDecrement32(&timeOutCount);
-        //随机获取一个模型
-        NSInteger index = arc4random_uniform((UInt32)self.danmuDataSources.count);
-        
-        //获取模型
-        HLDanMuModel *danmuModel = self.danmuDataSources[index];
-        
-        //返回实例
-        HLDanMuImage *danmuImage = [self.danmuView imageWithDanMuModel:danmuModel];
-        
-        danmuImage.x = [UIApplication sharedApplication].keyWindow.bounds.size.width;
-        danmuImage.y = arc4random_uniform(345);
-        
-        //添加弹幕
-        [self.danmuView addDanMuImage:danmuImage];
-
-        
-        
-        if (timeOutCount == 0) {
-            NSLog(@"timersource cancel");
-            [self.danmuView removeFromSuperview];
-            
-            dispatch_source_cancel(timer);
-        }
-    });
-    
-    dispatch_source_set_cancel_handler(timer, ^{
-        NSLog(@"timersource cancel handle block");
-    });
-    
-    dispatch_resume(timer);
-    
-    // Do any additional setup after loading the view.
+       // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -238,7 +171,7 @@
     }];
     [[self.HomeMenuView.ActivityView.SelectedBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         @strongify(self)
-        Xinwen_Vc *vc = [[Xinwen_Vc alloc]init];
+        Xinwen_base_Vc *vc = [[Xinwen_base_Vc alloc]init];
 
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
@@ -247,7 +180,7 @@
     [[self.HomeMenuView.ServeView.SelectedBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         @strongify(self)
 
-        
+        [QDWTools ShowTishiAlertControllerWithTitle:@"温馨提示" AndDetial:@"当前模块正在建设中，敬请期待" WithView:self];
         
     }];
     
@@ -314,24 +247,7 @@
     [self.navigationController pushViewController:web animated:NO];
     
 }
--(void)loadData{
-    
-    NSDictionary *dic = @{@"code":@"ssq",@"endTime":[QDWTools getNowTime],@"count":@"10"};
-    @weakify(self)
-    [[NetManager shareManager] postNetWithStyle:Duoqi_Style Withdic:dic Success:^(NSDictionary *data) {
-      @strongify(self)
-        if ([[NSString stringWithFormat:@"%@",data[@"showapi_res_code"]] isEqual:@"0"]) {
-            NSDictionary *result_dic = data[@"showapi_res_body"];
-            self.dataSource = [Caipiao_Model mj_objectArrayWithKeyValuesArray:result_dic[@"result"]];
-            
-            [self.tableView reloadData];
-        }else{
-            
-        }
-        
-    }];
-    
-}
+
 -(UIScrollView *)BackScrollView{
     if (!_BackScrollView) {
         _BackScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, -20, SCREEN_WIDTH, SCREEN_HEIGHT)];

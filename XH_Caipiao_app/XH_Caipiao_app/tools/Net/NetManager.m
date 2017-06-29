@@ -35,6 +35,8 @@
  */
 -(void)postNetWithStyle:(Selet_enum)my_enum Withdic:(NSDictionary *)dic Success:(void(^)(NSDictionary * data))success{
     
+    [SVProgressHUD showWithStatus:@"加载中"];
+    
     ShowAPIRequest *request=[[ShowAPIRequest alloc] initWithAppid:Caipiao_appId andSign:Caipiao_appSecret_post];
     
     NSString *url = @"";
@@ -48,7 +50,9 @@
         case Danqi_Style:
             url = @"https://route.showapi.com/44-3";
             break;
-        
+       case Xinwen_Style:
+            url = @"http://route.showapi.com/109-35";
+            break;
         default:
             break;
     }
@@ -73,7 +77,7 @@
        
        success(jsondic);
        
-       
+       [SVProgressHUD dismiss];
    }];
 
 }
