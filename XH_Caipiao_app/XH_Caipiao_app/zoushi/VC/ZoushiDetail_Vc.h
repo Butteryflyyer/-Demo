@@ -7,12 +7,18 @@
 //
 
 #import "BaseViewController.h"
+@protocol XWPageCoverPushControllerDelegate <NSObject>
 
-@interface ZoushiDetail_Vc : BaseViewController
+- (id<UIViewControllerInteractiveTransitioning>)interactiveTransitionForPush;
+
+@end
+@interface ZoushiDetail_Vc : BaseViewController<UINavigationControllerDelegate>
 
 
 @property(nonatomic,copy)NSString *title_text;
 
 @property(nonatomic,copy)NSString *style_url;
+
+@property (nonatomic, assign) id<XWPageCoverPushControllerDelegate> delegate;
 
 @end

@@ -57,9 +57,19 @@
 #define QDWEditInfo_URL            @"PersonalCenter/MobileEditInfo.act?"
 
 /**
+ *  邀请好友数
+ */
+#define QDWInviteFriend_URL @"UserController/userInvitationNum.act?"
+
+/**
  个人中心第一页。
  
  @return <#return value description#>
  */
 #define QDWgetMySelfInfo_URL         @"PersonalCenter/getMySelfInfo.act?"
+/**
+ *  生成二维码
+ */
+#define QDWCreatQRCode_URL @"UserController/phoneEncrypt.act?"
+#define QDWselfCenter_URL  @"weixinNew/selfCenter/register.html?" //分享二维码
 #endif /* Configure_URL_h */

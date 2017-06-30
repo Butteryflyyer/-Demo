@@ -76,7 +76,7 @@
         });
         
     }
-    
+    [SVProgressHUD dismiss];
 
 }
 -(void)initUI{
@@ -97,6 +97,7 @@
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         @strongify(self)
         
+        [SVProgressHUD showWithStatus:@"加载中"];
         
         AMapPOIAroundSearchRequest *request = [[AMapPOIAroundSearchRequest alloc] init];
         
@@ -136,6 +137,16 @@
     }
     
     return cell;
+}
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    cell.transform = CGAffineTransformMakeTranslation(self.view.bounds.size.width, 0);
+    [UIView animateWithDuration:1.0 delay:0.05*indexPath.section usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        cell.transform = CGAffineTransformMakeTranslation(0, 0);
+    } completion:^(BOOL finished) {
+        
+    }];
+    
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
      AMapPOI *poi = self.datasource[indexPath.row];

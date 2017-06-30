@@ -15,6 +15,7 @@
 
 @property(nonatomic,copy)NSString *icon_image;
 
+@property(nonatomic,copy)NSString *now_title;
 
 -(void)loadData;
 

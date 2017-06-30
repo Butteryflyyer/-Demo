@@ -67,6 +67,16 @@
     }];
     
 }
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    cell.transform = CGAffineTransformMakeTranslation(self.view.bounds.size.width, 0);
+    [UIView animateWithDuration:1.0 delay:0.05*indexPath.section usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        cell.transform = CGAffineTransformMakeTranslation(0, 0);
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 6;
 }

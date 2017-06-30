@@ -8,7 +8,7 @@
 
 #import "Kaijiang_Vc.h"
 #import "kaijiang_Cell.h"
-#import "ZoushiDetail_Vc.h"
+#import "ZoushiAll_Vc.h"
 @interface Kaijiang_Vc ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,retain)NSArray *Image_arr;
@@ -96,15 +96,26 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    ZoushiDetail_Vc *vc = [[ZoushiDetail_Vc alloc]init];
+    Caipiao_Model *model = self.datasouce[indexPath.row];
+    
+    ZoushiAll_Vc *vc = [[ZoushiAll_Vc alloc]init];
     vc.hidesBottomBarWhenPushed = YES;
     
-    vc.title_text = self.Title_arr[indexPath.section];
-    vc.style_url = self.Url_arr[indexPath.section];
+    vc.title_text = model.name;
+    vc.style_url = self.Code;
     
     [self.navigationController pushViewController:vc animated:YES];
 }
-
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    cell.transform = CGAffineTransformMakeTranslation(self.view.bounds.size.width, 0);
+    [UIView animateWithDuration:1.0 delay:0.05*indexPath.section usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        cell.transform = CGAffineTransformMakeTranslation(0, 0);
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 150;
 }

@@ -11,19 +11,31 @@
 @implementation QDWTools
 
 
-+(NSString *)getNowTime{
-    
-    NSDate *senddate=[NSDate date];
++(NSString *)getNowTimeWith:(NSTimeInterval)time{
+
+    NSDate *senddate= [NSDate date];
+    NSDate *lastDay = [NSDate dateWithTimeInterval:-time sinceDate:senddate];//前一天
     NSTimeZone *zone = [NSTimeZone systemTimeZone];
-    NSInteger interval = [zone secondsFromGMTForDate: senddate];
-    NSDate *localDate = [senddate dateByAddingTimeInterval: interval];
+    NSInteger interval = [zone secondsFromGMTForDate: lastDay];
+    NSDate *localDate = [lastDay dateByAddingTimeInterval: interval];
     NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
     [dateformatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
     NSString *locationString=[dateformatter stringFromDate:localDate];
 
     return locationString;
 }
-
++(NSString *)getNowTime{
+    
+    NSDate *senddate= [NSDate date];
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    NSInteger interval = [zone secondsFromGMTForDate: senddate];
+    NSDate *localDate = [senddate dateByAddingTimeInterval: interval];
+    NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
+    [dateformatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    NSString *locationString=[dateformatter stringFromDate:localDate];
+    
+    return locationString;
+}
 /**
  *  去除逗号 获取 字符串数组
  */

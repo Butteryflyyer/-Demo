@@ -14,6 +14,8 @@
 #import "PersonalInfoEditVc.h"
 #import <SDWebImage/UIImage+MultiFormat.h>
 #import <SDWebImage/SDWebImageManager.h>
+#import "ScanViewController.h"
+#import "QDWInviteFriendsViewController.h"
 @interface Mine_Vc ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) JSHeaderView *headerView;
 
@@ -68,7 +70,7 @@
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 5;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MineNormal_Cell * cell = [tableView dequeueReusableCellWithIdentifier:@"MineNormal_Cell"];
@@ -104,7 +106,17 @@
         
         [self loadUserInfoWithjump:1];
     }
-    if (indexPath.row == 2) {
+    if (indexPath.row ==2) {
+        ScanViewController *vc = [[ScanViewController alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.row == 3) {
+        QDWInviteFriendsViewController *vc = [[QDWInviteFriendsViewController alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.row == 4) {
         QDWSettingViewController *vc = [[QDWSettingViewController alloc]init];
         vc.hidesBottomBarWhenPushed = YES;
           [self.navigationController pushViewController:vc animated:YES];  

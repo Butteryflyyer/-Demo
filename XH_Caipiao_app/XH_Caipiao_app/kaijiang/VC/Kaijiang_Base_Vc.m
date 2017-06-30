@@ -45,9 +45,17 @@
 
 - (void)setupPageView {
     Kaijiang_Vc *oneVC = [[Kaijiang_Vc alloc] init];
+    
     kaijiangChildfirst_Vc *twoVC = [[kaijiangChildfirst_Vc alloc] init];
     kaijiangChildSecond_Vc *threeVC = [[kaijiangChildSecond_Vc alloc] init];
     kaijiangChildThird_Vc *fourVC = [[kaijiangChildThird_Vc alloc] init];
+    
+    oneVC.now_title = @"11选5";
+    twoVC.now_title = @"时时乐";
+    threeVC.now_title = @"时时彩";
+    fourVC.now_title = @"体彩";
+    
+    
     
     NSArray *childArr = @[oneVC, twoVC, threeVC, fourVC];
     /// pageContentView
@@ -56,7 +64,7 @@
     _pageContentView.delegatePageContentView = self;
     [self.view addSubview:_pageContentView];
     
-    NSArray *titleArr = @[@"11选5", @"排列3", @"时时彩", @"体彩"];
+    NSArray *titleArr = @[@"11选5", @"时时乐", @"时时彩", @"体彩"];
     /// pageTitleView
     self.pageTitleView = [SGPageTitleView pageTitleViewWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 44) delegate:self titleNames:titleArr];
     [self.view addSubview:_pageTitleView];

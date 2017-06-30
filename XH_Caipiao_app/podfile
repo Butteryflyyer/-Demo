@@ -7,9 +7,7 @@ target 'XH_Caipiao_app' do
 
   # Pods for XH_Caipiao_app
 pod 'BmobSDK'
-pod 'AMapSearch'
-pod 'AMap3DMap'
-pod 'AMapLocation'
+
 pod 'Masonry'
     pod ‘IQKeyboardManager’
   pod 'AFNetworking', '~> 3.0'

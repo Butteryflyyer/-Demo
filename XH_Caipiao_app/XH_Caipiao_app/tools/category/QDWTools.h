@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface QDWTools : NSObject
++(NSString *)getNowTimeWith:(NSTimeInterval)time;
 +(NSString *)getNowTime;
 /**
  *  去除逗号 获取 字符串数组

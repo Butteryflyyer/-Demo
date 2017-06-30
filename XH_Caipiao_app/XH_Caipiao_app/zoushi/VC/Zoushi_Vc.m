@@ -10,8 +10,8 @@
 #import "Zhonglei_Cell.h"
 #import "ZoushiDetail_Vc.h"
 #import "PYSearch.h"
-
-@interface Zoushi_Vc ()<UITableViewDelegate,UITableViewDataSource,PYSearchViewControllerDelegate>
+#import "XWInteractiveTransition.h"
+@interface Zoushi_Vc ()<UITableViewDelegate,UITableViewDataSource,PYSearchViewControllerDelegate,XWPageCoverPushControllerDelegate>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,retain)NSArray *Image_arr;
 @property(nonatomic,retain)NSArray *Url_arr;
@@ -19,7 +19,8 @@
 @property(nonatomic,retain)NSArray *description_arr;
 @property(nonatomic,retain)NSMutableArray *datasouce;
 
-
+@property (nonatomic, strong) XWInteractiveTransition *interactiveTransitionPush;
+@property(nonatomic,strong)NSIndexPath  *now_IndexPath;
 
 @end
 
@@ -39,9 +40,21 @@
 
      [[DanmuManager shareManager] ShowDanmuWithView:self.view];
     
+    _interactiveTransitionPush = [XWInteractiveTransition interactiveTransitionWithTransitionType:XWInteractiveTransitionTypePush GestureDirection:XWInteractiveTransitionGestureDirectionLeft];
+  @weakify(self)
+    _interactiveTransitionPush.pushConifg = ^(){
+        @strongify(self)
+        [self push:self.now_IndexPath];
+    };
+    //此处传入self.navigationController， 不传入self，因为self.view要形变，否则手势百分比算不准确；
+    [_interactiveTransitionPush addPanGestureForViewController:self];
+
+    
     // Do any additional setup after loading the view.
 }
-
+- (id<UIViewControllerInteractiveTransitioning>)interactiveTransitionForPush{
+    return _interactiveTransitionPush;
+}
 #pragma mark -- 上面的搜索
 -(void)SearchAction{
     // 1.创建热门搜索
@@ -135,14 +148,30 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self push:indexPath];
+}
+-(void)push:(NSIndexPath *)indexPath{
     ZoushiDetail_Vc *vc = [[ZoushiDetail_Vc alloc]init];
     vc.hidesBottomBarWhenPushed = YES;
     
     vc.title_text = self.Title_arr[indexPath.section];
     vc.style_url = self.Url_arr[indexPath.section];
-    
+    vc.delegate =self;
+    self.navigationController.delegate = vc;
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    cell.transform = CGAffineTransformMakeTranslation(self.view.bounds.size.width, 0);
+    [UIView animateWithDuration:1.0 delay:0.05*indexPath.section usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        cell.transform = CGAffineTransformMakeTranslation(0, 0);
+    } completion:^(BOOL finished) {
+        
+    }];
+
+}
+
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 105;

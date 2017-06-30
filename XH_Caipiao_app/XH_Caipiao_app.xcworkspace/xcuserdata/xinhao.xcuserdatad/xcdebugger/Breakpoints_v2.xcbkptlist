@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XH_Caipiao_app/Mine/VC/Mine_Vc.m"
-            timestampString = "520319304.356388"
+            timestampString = "520485044.543236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "-loadUserInfoWithjump:"
             landmarkType = "7">
          </BreakpointContent>
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XH_Caipiao_app/Mine/VC/Mine_Vc.m"
-            timestampString = "520319313.412848"
+            timestampString = "520485044.543236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "-loadUserInfoWithjump:"
             landmarkType = "7">
             <Locations>
@@ -68,12 +68,12 @@
                   moduleName = "XH_Caipiao_app"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xinhao/-Demo/XH_Caipiao_app/XH_Caipiao_app/Mine/VC/Mine_Vc.m"
-                  timestampString = "520339177.807795"
+                  timestampString = "520491090.656222"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "138"
-                  endingLineNumber = "138"
-                  offsetFromSymbolStart = "503">
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "556">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -83,11 +83,11 @@
                   moduleName = "XH_Caipiao_app"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xinhao/-Demo/XH_Caipiao_app/XH_Caipiao_app/Mine/VC/Mine_Vc.m"
-                  timestampString = "520339177.809437"
+                  timestampString = "520491090.660175"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "140"
-                  endingLineNumber = "140"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XH_Caipiao_app/Mine/VC/Mine_Vc.m"
-            timestampString = "520319318.780956"
+            timestampString = "520485044.543236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "-loadUserInfoWithjump:"
             landmarkType = "7">
             <Locations>
@@ -116,12 +116,12 @@
                   moduleName = "XH_Caipiao_app"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xinhao/-Demo/XH_Caipiao_app/XH_Caipiao_app/Mine/VC/Mine_Vc.m"
-                  timestampString = "520339177.814371"
+                  timestampString = "520491090.703158"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "90">
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "80">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -131,60 +131,12 @@
                   moduleName = "XH_Caipiao_app"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xinhao/-Demo/XH_Caipiao_app/XH_Caipiao_app/Mine/VC/Mine_Vc.m"
-                  timestampString = "520339177.817394"
+                  timestampString = "520491090.707294"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
-                  offsetFromSymbolStart = "47">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XH_Caipiao_app/AppDelegate.m"
-            timestampString = "520339176.683443"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[AppDelegate application:didFinishLaunchingWithOptions:]"
-                  moduleName = "XH_Caipiao_app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xinhao/-Demo/XH_Caipiao_app/XH_Caipiao_app/AppDelegate.m"
-                  timestampString = "520339177.823816"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "657">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__57-[AppDelegate application:didFinishLaunchingWithOptions:]_block_invoke_2"
-                  moduleName = "XH_Caipiao_app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xinhao/-Demo/XH_Caipiao_app/XH_Caipiao_app/AppDelegate.m"
-                  timestampString = "520339177.827347"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "90">
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "64">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -250,6 +202,102 @@
             startingLineNumber = "59"
             endingLineNumber = "59"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XH_Caipiao_app/zoushi/VC/zoushiChild/ZoushiBaseDetail_Vc.m"
+            timestampString = "520490452.205061"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-loadata"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XH_Caipiao_app/zoushi/VC/zoushiChild/ZoushiBaseDetail_Vc.m"
+            timestampString = "520490452.205061"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-loadata"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZoushiBaseDetail_Vc loadata]"
+                  moduleName = "XH_Caipiao_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinhao/-Demo/XH_Caipiao_app/XH_Caipiao_app/zoushi/VC/zoushiChild/ZoushiBaseDetail_Vc.m"
+                  timestampString = "520491090.907451"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[ZoushiBaseDetail_Vc loadata]_block_invoke"
+                  moduleName = "XH_Caipiao_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinhao/-Demo/XH_Caipiao_app/XH_Caipiao_app/zoushi/VC/zoushiChild/ZoushiBaseDetail_Vc.m"
+                  timestampString = "520491090.911007"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XH_Caipiao_app/zoushi/VC/zoushiChild/ZoushiBaseDetail_Vc.m"
+            timestampString = "520490452.205061"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-loadata"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XH_Caipiao_app/zoushi/VC/Zoushi_Vc.m"
+            timestampString = "520490688.83838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "-push:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

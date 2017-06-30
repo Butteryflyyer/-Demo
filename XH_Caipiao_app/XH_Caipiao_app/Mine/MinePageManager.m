@@ -160,6 +160,64 @@
         failure(error);
     }];
 }
+/**
+ *  邀请好友数
+ */
++(void)InviteFriendUrl:(NSString *)url WithDict:(NSDictionary *)dict SuccessBlock:(void(^)(id data))success FailureBlock:(void(^)(id data))failure {
+    
+    [XHNetWorking postWithUrl:url params:dict success:^(id response) {
+        
+        DLOG(@"%@", response);
+        if (response) {
+            NSString *ifRtstate = [NSString stringWithFormat:@"%@",response[QDWrtState]];
+            if ([ifRtstate isEqual:@"1"]) {
+                success(response[QDWrtData]);
+                
+            }else{
+                
+                success(nil);
+            }
+        }
+        
+    } fail:^(NSError *error) {
+        failure(error);
+        
+        
+    }];
+    
+}
+
+/**
+ *  生成二维码
+ *
+ *  @param url
+ *  @param dic
+ *  @param success
+ *  @param failure
+ */
++(void)CreatQRCodeWithUrl:(NSString *)url SuccessBlock:(void(^)(id data))success FailureBlock:(void(^)(id data))failure {
+    
+    [XHNetWorking postWithUrl:url params:nil success:^(id response) {
+        
+        //        DLOG(@"%@", response);
+        if (response) {
+            NSString *ifRtstate = [NSString stringWithFormat:@"%@",response[QDWrtState]];
+            if ([ifRtstate isEqual:@"1"]) {
+                success(response[QDWrtData]);
+                
+            }else{
+                
+                success(nil);
+            }
+        }
+        
+    } fail:^(NSError *error) {
+        failure(error);
+        
+        
+    }];
+    
+}
 
 
 @end

@@ -8,9 +8,15 @@
 
 #import "ZoushiDetail_Vc.h"
 #import "Zhonglei_zoushi_Cell.h"
+#import "XWInteractiveTransition.h"
+#import "XWPageCoverTransition.h"
+
 @interface ZoushiDetail_Vc ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,retain)NSMutableArray *datasouce;
+
+@property (nonatomic, strong) XWInteractiveTransition *interactiveTransitionPop;
+@property (nonatomic, assign) UINavigationControllerOperation operation;
 @end
 
 @implementation ZoushiDetail_Vc
@@ -21,8 +27,27 @@
     [self initData];
     [self initUI];
     [self addNavBarTitle:self.title_text];
+    //初始化手势过渡的代理
+    _interactiveTransitionPop = [XWInteractiveTransition interactiveTransitionWithTransitionType:XWInteractiveTransitionTypePop GestureDirection:XWInteractiveTransitionGestureDirectionRight];
+    //给当前控制器的视图添加手势
+    [_interactiveTransitionPop addPanGestureForViewController:self];
     // Do any additional setup after loading the view.
 }
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
+    _operation = operation;
+    //分pop和push两种情况分别返回动画过渡代理相应不同的动画操作
+    return [XWPageCoverTransition transitionWithType:operation == UINavigationControllerOperationPush ? XWPageCoverTransitionTypePush : XWPageCoverTransitionTypePop];
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
+    if (_operation == UINavigationControllerOperationPush) {
+        XWInteractiveTransition *interactiveTransitionPush = [_delegate interactiveTransitionForPush];
+        return interactiveTransitionPush.interation ? interactiveTransitionPush : nil;
+    }else{
+        return _interactiveTransitionPop.interation ? _interactiveTransitionPop : nil;
+    }
+}
+
 -(void)initData{
     self.datasouce = [[NSMutableArray alloc]init];
 }
@@ -68,7 +93,16 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 120;
 }
-
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    cell.transform = CGAffineTransformMakeTranslation(self.view.bounds.size.width, 0);
+    [UIView animateWithDuration:1.0 delay:0.05*indexPath.section usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        cell.transform = CGAffineTransformMakeTranslation(0, 0);
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
 -(void)loadata{
     NSDictionary *dic = @{@"code":self.style_url,@"endTime":[QDWTools getNowTime],@"count":@"10"};
     @weakify(self)

@@ -141,6 +141,8 @@
     [[gaode_Location shareInstance]getLocation:^(CLLocation *location, AMapLocationReGeocode *code) {
         [QDWUser shareManager].latitude = location.coordinate.latitude;
         [QDWUser shareManager].longitude = location.coordinate.longitude;
+        
+//        [QDWTools ShowTishiAlertControllerWithTitle:<#(NSString *)#> AndDetial:<#(NSString *)#> WithView:<#(UIViewController *)#>]
     }];
     
    #pragma mark -- 友盟
