@@ -260,7 +260,7 @@
 				TargetAttributes = {
 					BD2ECD671E690C2F00A688FC = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = BSGYLY83PB;
+						DevelopmentTeam = NLQUF9KEG2;
 						ProvisioningStyle = Automatic;
 					};
 					BD2ECD801E690C2F00A688FC = {
@@ -487,7 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BSGYLY83PB;
+				DEVELOPMENT_TEAM = NLQUF9KEG2;
 				INFOPLIST_FILE = XhTuqiTabBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,7 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BSGYLY83PB;
+				DEVELOPMENT_TEAM = NLQUF9KEG2;
 				INFOPLIST_FILE = XhTuqiTabBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
