@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "SnakeNodeViewController.h"
+#import <BmobSDK/Bmob.h>
+#import <BmobSDK/BmobObject.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+     [Bmob registerWithAppKey:Application_ID];
+//
+//    //往GameScore表添加一条playerName为小明，分数为78的数据
+//    BmobObject *gameScore = [BmobObject objectWithClassName:@"Delete_Caipiaojump"];
+//    [gameScore setObject:@"小明" forKey:@"myurl"];
+//    [gameScore setObject:@78 forKey:@"isshowwap"];
+////    [gameScore setObject:[NSNumber numberWithBool:YES] forKey:@"cheatMode"];
+//    [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+//        //进行操作
+//    }];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
