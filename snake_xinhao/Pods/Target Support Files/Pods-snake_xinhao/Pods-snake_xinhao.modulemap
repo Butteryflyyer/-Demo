@@ -1,0 +1,6 @@
+framework module Pods_snake_xinhao {
+  umbrella header "Pods-snake_xinhao-umbrella.h"
+
+  export *
+  module * { export * }
+}

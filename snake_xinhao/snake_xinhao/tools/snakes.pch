@@ -1,0 +1,27 @@
+//
+//  snakes.pch
+//  Snakes
+//
+//  Created by 信昊 on 2017/10/27.
+//  Copyright © 2017年 Li Xiaolei. All rights reserved.
+//
+
+#ifndef snakes_pch
+#define snakes_pch
+//$(SRCROOT)/snake_xinhao/tools/snakes.pch
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "snake_common.h"
+#import "snake_key.h"
+#import "Masonry.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
+#import "Tools.h"
+#import "XBGUserLoginRegistHelper.h"
+#import <BmobSDK/Bmob.h>
+#import "SVProgressHUD.h"
+#import "UserModel.h"
+#import "LoginUserModel.h"
+#import "WSNetWorking.h"
+#endif /* snakes_pch */
