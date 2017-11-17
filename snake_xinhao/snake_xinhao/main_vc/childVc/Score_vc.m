@@ -104,7 +104,7 @@
 //    }];
 
     sleep(2);
-    self.source = [[NSMutableArray alloc]initWithArray:@[@{@"score":@"100",@"name":@"tony"},@{@"score":@"90",@"name":@"boo"},@{@"score":@"70",@"name":@"borr"},@{@"score":@"70",@"name":@"tony"},@{@"score":@"70",@"name":@"too"},@{@"score":@"60",@"name":@"tow"},@{@"score":@"59",@"name":@"myself"},@{@"score":@"48",@"name":@"honi"}]];
+    self.source = [[NSMutableArray alloc]initWithArray:@[@{@"score":@"0.5",@"name":@"0.499"},@{@"score":@"0.45",@"name":@"0.35"},@{@"score":@"0.34",@"name":@"borr"},@{@"score":@"0.32",@"name":@"tony"},@{@"score":@"0.31",@"name":@"too"},@{@"score":@"0.30",@"name":@"tow"},@{@"score":@"0.29",@"name":@"myself"},@{@"score":@"0.29",@"name":@"honi"}]];
     [SVProgressHUD dismiss];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.TableView reloadData];

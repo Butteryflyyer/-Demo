@@ -117,9 +117,9 @@
 //    }];
     [[_login_btn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         @strongify(self)
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+
             [self login];
-        });
+   
        
     }];
     [[_go_regist_btn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
@@ -188,7 +188,7 @@
 
     [LoginUserModel LoginQDWWithUrl:QDWLogin_URL AndDic:@{@"phone":phone,@"password":password} BlockSuccess:^(id data) {
         [SVProgressHUD dismiss];
-        if (data) {
+   
             [UserModel user].userid = @"25728";
             [SVProgressHUD showSuccessWithStatus:@"login success"];
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -197,9 +197,7 @@
                 [self.navigationController pushViewController:main animated:YES];
             });
 
-        }else{
-            [SVProgressHUD showErrorWithStatus:@"error"];
-        }
+
     } WithBlockFail:^(id data) {
           [SVProgressHUD dismiss];
     }];

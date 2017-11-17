@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		54C3FAC4007621C87FA3EA2D /* Pods_snake_xinhaoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C6AE2FED06E1C273BE0A1B /* Pods_snake_xinhaoTests.framework */; };
+		BD8240F81FB84207009CA0FB /* TanShe.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8240F41FB84206009CA0FB /* TanShe.m */; };
+		BD8240F91FB84207009CA0FB /* UIView+DrawRect.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8240F71FB84207009CA0FB /* UIView+DrawRect.m */; };
+		BD8240FC1FB842BF009CA0FB /* shuangse_vc.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8240FB1FB842BF009CA0FB /* shuangse_vc.m */; };
 		BD93CB851FA349D100114B5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD93CB841FA349D100114B5C /* AppDelegate.m */; };
 		BD93CB881FA349D100114B5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD93CB871FA349D100114B5C /* ViewController.m */; };
 		BD93CB8B1FA349D100114B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD93CB891FA349D100114B5C /* Main.storyboard */; };
@@ -97,6 +100,12 @@
 		5DB3368D8CA594087FC57CFD /* Pods-snake_xinhaoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snake_xinhaoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-snake_xinhaoUITests/Pods-snake_xinhaoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		67E5920B910140660A4C6C67 /* Pods-snake_xinhao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snake_xinhao.debug.xcconfig"; path = "Pods/Target Support Files/Pods-snake_xinhao/Pods-snake_xinhao.debug.xcconfig"; sourceTree = "<group>"; };
 		8CEC05BEFF3830E99736A516 /* Pods-snake_xinhaoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snake_xinhaoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-snake_xinhaoTests/Pods-snake_xinhaoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD8240F41FB84206009CA0FB /* TanShe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TanShe.m; sourceTree = "<group>"; };
+		BD8240F51FB84207009CA0FB /* UIView+DrawRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DrawRect.h"; sourceTree = "<group>"; };
+		BD8240F61FB84207009CA0FB /* TanShe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TanShe.h; sourceTree = "<group>"; };
+		BD8240F71FB84207009CA0FB /* UIView+DrawRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DrawRect.m"; sourceTree = "<group>"; };
+		BD8240FA1FB842BF009CA0FB /* shuangse_vc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shuangse_vc.h; sourceTree = "<group>"; };
+		BD8240FB1FB842BF009CA0FB /* shuangse_vc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shuangse_vc.m; sourceTree = "<group>"; };
 		BD93CB801FA349D100114B5C /* snake_xinhao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snake_xinhao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD93CB831FA349D100114B5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD93CB841FA349D100114B5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -362,22 +371,9 @@
 				BD93CC5D1FA4D78000114B5C /* XImagePicker.h */,
 				BD93CC5E1FA4D78000114B5C /* XImagePicker.m */,
 				BD93CC4D1FA4D1B200114B5C /* SDAutoLayout */,
-				BD93CC271FA3799100114B5C /* SVProgressHUD */,
-				BD93CC211FA3736100114B5C /* Tools.h */,
-				BD93CC221FA3736100114B5C /* Tools.m */,
 				BD93CBDD1FA34F6300114B5C /* snakes.pch */,
-				BD93CBDB1FA34F6200114B5C /* snake_common.h */,
-				BD93CBDC1FA34F6200114B5C /* snake_key.h */,
-				BDD3D23E1FA814500026CCDF /* WSNetWorking.h */,
-				BDD3D23F1FA814500026CCDF /* WSNetWorking.m */,
-				BDD3D2411FA814860026CCDF /* LoginUserModel.h */,
-				BDD3D2421FA814860026CCDF /* LoginUserModel.m */,
-				BD93CC3F1FA4CD3300114B5C /* XHReachability.h */,
-				BD93CC401FA4CD3300114B5C /* XHReachability.m */,
 				BD93CC4B1FA4D16000114B5C /* SinglePickView.h */,
 				BD93CC4A1FA4D15F00114B5C /* SinglePickView.m */,
-				BD93CC521FA4D30000114B5C /* UserModel.h */,
-				BD93CC531FA4D30000114B5C /* UserModel.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -400,6 +396,19 @@
 		BD93CBE71FA3708200114B5C /* xiaobaogao_login regist */ = {
 			isa = PBXGroup;
 			children = (
+				BD93CBDC1FA34F6200114B5C /* snake_key.h */,
+				BD93CC271FA3799100114B5C /* SVProgressHUD */,
+				BD93CC211FA3736100114B5C /* Tools.h */,
+				BD93CC221FA3736100114B5C /* Tools.m */,
+				BD93CBDB1FA34F6200114B5C /* snake_common.h */,
+				BDD3D23E1FA814500026CCDF /* WSNetWorking.h */,
+				BDD3D23F1FA814500026CCDF /* WSNetWorking.m */,
+				BDD3D2411FA814860026CCDF /* LoginUserModel.h */,
+				BDD3D2421FA814860026CCDF /* LoginUserModel.m */,
+				BD93CC3F1FA4CD3300114B5C /* XHReachability.h */,
+				BD93CC401FA4CD3300114B5C /* XHReachability.m */,
+				BD93CC521FA4D30000114B5C /* UserModel.h */,
+				BD93CC531FA4D30000114B5C /* UserModel.m */,
 				BD93CBE81FA3708200114B5C /* Vc */,
 				BD93CBED1FA3708200114B5C /* View */,
 				BD93CC0A1FA3708200114B5C /* XBGUserLoginRegistHelper.h */,
@@ -411,6 +420,10 @@
 		BD93CBE81FA3708200114B5C /* Vc */ = {
 			isa = PBXGroup;
 			children = (
+				BD8240F61FB84207009CA0FB /* TanShe.h */,
+				BD8240F41FB84206009CA0FB /* TanShe.m */,
+				BD8240F51FB84207009CA0FB /* UIView+DrawRect.h */,
+				BD8240F71FB84207009CA0FB /* UIView+DrawRect.m */,
 				BD93CBE91FA3708200114B5C /* Login_xiaobaogao_vc.h */,
 				BD93CBEA1FA3708200114B5C /* Login_xiaobaogao_vc.m */,
 				BD93CBEB1FA3708200114B5C /* Regist_xiaobaogao_vc.h */,
@@ -508,6 +521,8 @@
 				BD93CC681FA5A11200114B5C /* Score_vc.m */,
 				BD93CC6A1FA5A46E00114B5C /* aboutus_vc.h */,
 				BD93CC6B1FA5A46E00114B5C /* aboutus_vc.m */,
+				BD8240FA1FB842BF009CA0FB /* shuangse_vc.h */,
+				BD8240FB1FB842BF009CA0FB /* shuangse_vc.m */,
 			);
 			path = childVc;
 			sourceTree = "<group>";
@@ -846,10 +861,13 @@
 			files = (
 				BD93CC601FA5886A00114B5C /* SnakeNodeViewController.m in Sources */,
 				BD93CC2E1FA37AAA00114B5C /* SVProgressHUD.m in Sources */,
+				BD8240FC1FB842BF009CA0FB /* shuangse_vc.m in Sources */,
 				BD93CC5A1FA4D65B00114B5C /* feedBackview.m in Sources */,
 				BD93CB881FA349D100114B5C /* ViewController.m in Sources */,
 				BD93CC231FA373B100114B5C /* Tools.m in Sources */,
+				BD8240F81FB84207009CA0FB /* TanShe.m in Sources */,
 				BDD3D2401FA814500026CCDF /* WSNetWorking.m in Sources */,
+				BD8240F91FB84207009CA0FB /* UIView+DrawRect.m in Sources */,
 				BD93CC691FA5A11200114B5C /* Score_vc.m in Sources */,
 				BDD3D2431FA814860026CCDF /* LoginUserModel.m in Sources */,
 				BD93CC0F1FA3716100114B5C /* Color_btn.m in Sources */,
@@ -1082,7 +1100,7 @@
 				INFOPLIST_FILE = snake_xinhao/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.snakeMyPro.com;
+				PRODUCT_BUNDLE_IDENTIFIER = www.shuangse.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1108,7 +1126,7 @@
 				INFOPLIST_FILE = snake_xinhao/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.snakeMyPro.com;
+				PRODUCT_BUNDLE_IDENTIFIER = www.shuangse.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

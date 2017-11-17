@@ -17,6 +17,7 @@
 #import "Score_vc.h"
 #import "aboutus_vc.h"
 #import "SnakeNodeViewController.h"
+#import "shuangse_vc.h"
 @interface Main_ViewController ()
 @property(nonatomic,strong)UIImageView *home_imageview;
 @property(nonatomic,strong)main_view *mainview;
@@ -51,7 +52,7 @@
     self.home_imageview = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_HEIGHT, SCREEN_WIDTH)];
     self.home_imageview.transform =  CGAffineTransformRotate(self.home_imageview.transform, M_PI/2);//旋转180;
     //    self.home_imageview.layer.anchorPoint = CGPointMake(0, 0);
-    self.home_imageview.image = IMG(@"home_back");
+    self.home_imageview.image = IMG(@"背景1");
     self.home_imageview.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
     [self.view addSubview:self.home_imageview];
     
@@ -66,7 +67,7 @@
     }];
     @weakify(self)
     [[self.mainview.playgame rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {@strongify(self)
-        SnakeNodeViewController *vc = [[SnakeNodeViewController alloc]init];
+        shuangse_vc *vc = [[shuangse_vc alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
         
     }];

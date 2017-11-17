@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "snake_xinhao/xiaobaogao_login regist/Vc/Login_xiaobaogao_vc.m"
-            timestampString = "531651508.307937"
+            timestampString = "532172430.595962"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "152"
@@ -202,45 +202,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "snake_xinhao/xiaobaogao_login regist/Vc/Login_xiaobaogao_vc.m"
-            timestampString = "531651508.308258"
+            timestampString = "532172430.596086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "-login"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[Login_xiaobaogao_vc login]"
-                  moduleName = "snake_xinhao"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xinhao/Desktop/%E7%BB%83%E4%B9%A0/snake_xinhao/snake_xinhao/xiaobaogao_login%20regist/Vc/Login_xiaobaogao_vc.m"
-                  timestampString = "531648367.47613"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "184"
-                  endingLineNumber = "184"
-                  offsetFromSymbolStart = "427">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__28-[Login_xiaobaogao_vc login]_block_invoke"
-                  moduleName = "snake_xinhao"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xinhao/Desktop/%E7%BB%83%E4%B9%A0/snake_xinhao/snake_xinhao/xiaobaogao_login%20regist/Vc/Login_xiaobaogao_vc.m"
-                  timestampString = "531648367.478961"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "185"
-                  endingLineNumber = "185"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "snake_xinhao/xiaobaogao_login regist/Vc/Login_xiaobaogao_vc.m"
+            timestampString = "532172430.596144"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "-login"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "snake_xinhao/xiaobaogao_login regist/LoginUserModel.m"
+            timestampString = "532169773.083838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "+LoginQDWWithUrl:AndDic:BlockSuccess:WithBlockFail:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "snake_xinhao/xiaobaogao_login regist/LoginUserModel.m"
+            timestampString = "532169775.505636"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "+LoginQDWWithUrl:AndDic:BlockSuccess:WithBlockFail:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

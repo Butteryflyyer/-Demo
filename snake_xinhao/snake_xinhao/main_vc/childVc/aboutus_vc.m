@@ -27,7 +27,7 @@
 //    about.text = @"[info] Remember the snake on the black and white mobile phone? Miss to play on a few?Now you don't have to wait, you can also play snake in iPhone, the same classic, different operation feel,With the advantage of touch screen, the fingers glide gently to control the snake's way forward.The eternal classic rules, not to eat beans, long body, don't hit the wall, do not eat its own tail, the snake will speed along with the length of accelerating Support the global rankings, you can compete with each other";
     
     UITextView *textview = [[UITextView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT)];
-    textview.text = @"[info] Remember the snake on the black and white mobile phone? Miss to play on a few?Now you don't have to wait, you can also play snake in iPhone, the same classic, different operation feel,With the advantage of touch screen, the fingers glide gently to control the snake's way forward.The eternal classic rules, not to eat beans, long body, don't hit the wall, do not eat its own tail, the snake will speed along with the length of accelerating Support the global rankings, you can compete with each other";
+    textview.text = @"[info]Remember the hours playing Pinball? Is not miss, or the original rules, I set the different obstacles, you have to do is to get the ball to hit, I like you oh. Your customs clearance. This is the first version, the future will continue to upgrade. Please pay attention to me.";
     [self.view addSubview:textview];
     textview.font = FontBold(15);
     

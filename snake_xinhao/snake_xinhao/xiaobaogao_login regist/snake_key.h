@@ -19,7 +19,7 @@
 
 #define Application_ID @"f62370e7c92c98ce983e6a757790e0fb"
 
-#define jiguang_key @"030113703470847fbbfb5956"
+#define jiguang_key @"c9389b8497b57851111820e7"
 
 //#define QDWBASE_URL @"http://www.zyskcn.com/qdw/"/
 
